@@ -1,0 +1,188 @@
+:root {
+  --colorblack: #282828;
+  --colorwhite: rgb(240, 240, 240);
+  --colorgray: #616060;
+  --colorpurple: #55007c;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: var(--colorwhite);
+  width: 100%;
+  height: 300vh;
+  margin: 0;
+  padding: 0;
+}
+
+#wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+.main-main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.main-main__centerText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 50px 0;
+  font-size: 13px;
+}
+
+.main-main__centerText span {
+  display: flex;
+  justify-content: center;
+  color: var(--colorgray);
+}
+
+.main-main__centerText span mark {
+  font-weight: 400;
+  color: black;
+  background: none;
+  font-weight: 900;
+}
+
+.main-main__text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 70%;
+  z-index: 999;
+}
+
+.main-main__text span:first-child {
+  font-size: 60px;
+  font-weight: 900;
+  margin: 0;
+  color: black;
+}
+.main-main__text span:nth-child(2) {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0 0 40px 0;
+  color: #3f3e3e;
+}
+.main-main__text span:nth-child(3),
+.main-main__text span:nth-child(4) {
+  font-size: 20px;
+  margin: 2px 0;
+  color: #747474;
+}
+
+.main-main__text span:nth-child(4) mark {
+  font-weight: 400;
+  color: black;
+  background: none;
+  font-weight: 900;
+}
+
+.main-main .movingChess img {
+  position: absolute;
+  top: 0;
+  right: 150px;
+  width: 800px;
+  z-index: 1;
+  animation: movingChess 7s linear infinite, apear 0.8s ease-in-out;
+}
+
+.marquee {
+  position: absolute;
+  display: inline-block;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  white-space: nowrap;
+  animation: slidemrqueev 20s linear infinite;
+}
+
+.marqueeBox::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 50px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.marquee2 {
+  animation-delay: -10s;
+}
+
+.marquee span {
+  display: inline-block;
+  box-sizing: border-box;
+  color: var(--colorgray);
+  margin-right: 10px;
+}
+
+.marquee span mark {
+  background: none;
+  color: #300046;
+  font-weight: 900;
+}
+
+@keyframes movingChess {
+  0% {
+    top: 0;
+  }
+  10% {
+    top: -5px;
+  }
+  40% {
+    top: -20px;
+  }
+  50% {
+    top: -25px;
+  }
+  60% {
+    top: -20px;
+  }
+  90% {
+    top: -5px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes slidemrqueev {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes apear {
+  from {
+    transform: scale(0) translateX(100%) translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: scale(100%) translateX(0) translateY(0);
+    opacity: 1;
+  }
+}

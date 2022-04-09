@@ -1,0 +1,42 @@
+.main-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header__nav-logo {
+  padding: 25px 70px 25px 70px;
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: 900;
+  color: var(--colorpurple);
+}
+
+.header__nav-menu {
+  display: flex;
+  align-items: center;
+  padding: 25px 70px 25px 70px;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 900;
+}
+
+.header__nav-logo:hover,
+.header__nav-menu:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.header__nav-menu p {
+  margin-right: 3px;
+}
+
+.header__nav-menu button {
+  outline: none;
+  border: none;
+  background: var(--colorwhite);
+}
