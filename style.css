@@ -13,7 +13,7 @@ html {
 body {
   background-color: var(--colorwhite);
   width: 100%;
-  height: 300vh;
+  height: 500vh;
   margin: 0;
   padding: 0;
   background-image: url(files/background.jpg);
@@ -34,6 +34,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: sans-serif;
+  border-bottom: 1px solid black;
 }
 
 .main-main__centerText {
@@ -73,18 +74,18 @@ body {
   font-size: 60px;
   font-weight: 900;
   margin: 0;
-  color: black;
+  color: var(--colorblack);
   opacity: 0;
-  animation: slideMainText 1.5s ease-in-out forwards;
+  animation: slideMainText 1.5s ease forwards;
 }
 .main-main__text span:nth-child(2) {
   position: relative;
   font-size: 40px;
   font-weight: 600;
   margin: 0 0 40px 0;
-  color: #3f3e3e;
+  color: #646464;
   opacity: 0;
-  animation: slideMainText 1.5s ease-in-out 0.2s forwards;
+  animation: slideMainText 1.5s ease 0.2s forwards;
 }
 .main-main__text span:nth-child(3),
 .main-main__text span:nth-child(4) {
@@ -93,7 +94,7 @@ body {
   margin: 2px 0;
   color: #747474;
   opacity: 0;
-  animation: slideMainText 1.5s ease-in-out 0.4s forwards;
+  animation: slideMainText 1.5s ease 0.4s forwards;
 }
 
 .main-main__text span:nth-child(4) mark {
@@ -111,7 +112,7 @@ body {
   height: auto;
   margin-top: 50px;
   opacity: 0;
-  animation: movingChess 7s linear 1.5s infinite, apear 0.8s 1.3s ease-in-out;
+  animation: movingChess 7s ease-in-out 1.5s infinite, apear 0.8s 1.3s ease;
 }
 
 .main-main .movingChess img {
@@ -145,7 +146,7 @@ body {
 .marquee {
   position: absolute;
   display: inline-block;
-  bottom: 10px;
+  bottom: 101vh;
   left: 0;
   width: 100%;
   z-index: 99;
@@ -173,31 +174,15 @@ body {
 
 @keyframes movingChess {
   0% {
-    top: 0;
-    opacity: 1;
-  }
-  10% {
-    top: -5px;
-    opacity: 1;
-  }
-  40% {
-    top: -20px;
+    top: 0vh;
     opacity: 1;
   }
   50% {
-    top: -25px;
-    opacity: 1;
-  }
-  60% {
-    top: -20px;
-    opacity: 1;
-  }
-  90% {
-    top: -5px;
+    top: -4vh;
     opacity: 1;
   }
   100% {
-    top: 0;
+    top: 0vh;
     opacity: 1;
   }
 }
@@ -222,22 +207,161 @@ body {
 
 @keyframes apear {
   from {
-    transform: scale(0) translateX(100%) translateY(100%);
+    transform: scale(70%);
     opacity: 0;
   }
   to {
-    transform: scale(100%) translateX(0) translateY(0);
+    transform: scale(100%);
     opacity: 1;
+  }
+}
+
+@keyframes disApear {
+  from {
+    transform: scale(100%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(70%);
+    opacity: 0;
   }
 }
 
 @keyframes slideMainText {
   from {
-    left: -500px;
+    left: -100px;
     opacity: 0;
   }
   to {
     left: 0;
     opacity: 1;
+  }
+}
+
+.main-main2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.main-main2__text {
+  position: absolute;
+  right: 0;
+  margin-right: 250px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  z-index: 999;
+}
+
+.main-main2__text span:first-child {
+  position: relative;
+  font-size: 60px;
+  font-weight: 900;
+  margin: 0;
+  color: var(--colorblack);
+  opacity: 0;
+}
+.main-main2__text span:nth-child(2) {
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0 0 40px 0;
+  color: #646464;
+  opacity: 0;
+}
+.main-main2__text span:nth-child(3),
+.main-main2__text span:nth-child(4) {
+  position: relative;
+  font-size: 20px;
+  margin: 2px 0;
+  color: #747474;
+  opacity: 0;
+}
+
+.main-main2__text span:nth-child(4) mark {
+  font-weight: 400;
+  color: black;
+  background: none;
+  font-weight: 900;
+}
+
+.movingCrown {
+  position: absolute;
+  top: 107vh;
+  left: 200px;
+  width: auto;
+  height: auto;
+  margin-top: 50px;
+  opacity: 0;
+}
+
+.main-main2 .movingCrown img {
+  width: 700px;
+}
+
+.marqueeBox-2 {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  background: none;
+  animation: slidemrqueevapear 1.5s ease-in-out;
+}
+
+.marquee-2 {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  white-space: nowrap;
+  background: none;
+  animation: slidemrqueev 20s linear infinite;
+}
+
+.marquee2-2 {
+  animation-delay: -10s;
+}
+
+.marquee-2 span {
+  box-sizing: border-box;
+  color: var(--colorgray);
+  margin-right: 10px;
+}
+
+.marquee-2 span mark {
+  background: none;
+  color: #300046;
+  font-weight: 900;
+}
+
+@keyframes movingCrown {
+  0% {
+    opacity: 1;
+    top: 107vh;
+  }
+  50% {
+    opacity: 1;
+    top: 102vh;
+  }
+  100% {
+    opacity: 1;
+    top: 107vh;
+  }
+}
+
+@keyframes slideMainTextDisapear {
+  from {
+    left: 0;
+    opacity: 1;
+  }
+  to {
+    left: -100px;
+    opacity: 0;
   }
 }

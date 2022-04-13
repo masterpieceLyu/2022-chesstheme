@@ -19,6 +19,13 @@
   height: 20px;
 }
 
+.header__nav-menu-hidden {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background: white;
+}
+
 .header__nav-menu {
   display: flex;
   align-items: center;
@@ -28,6 +35,10 @@
   font-family: sans-serif;
   font-weight: 900;
   z-index: 999;
+  transition: 1s ease-in-out;
+}
+
+.header__nav-menu.active {
 }
 
 .header__nav-logo:hover,
@@ -48,6 +59,7 @@
   outline: none;
   border: none;
   background: none;
+  color: var(--colorpurple);
 }
 
 .main-header__left {
