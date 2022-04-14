@@ -13,7 +13,6 @@ const pointOn = document.querySelector(".pointOn");
 
 addEventListener("scroll", function () {
   let value = this.scrollY;
-  console.log(value);
 
   if (value > 442) {
     mainText4.style.display = "inline";
@@ -49,11 +48,13 @@ const nav_menu_hidden = document.querySelector(".header__nav-menu-hidden");
 nav_menu.addEventListener("click", handleClick);
 
 function handleClick() {
-  nav_menu.classList.toggle("active");
+  nav_menu_hidden.classList.toggle("active");
 }
 
-function name() {
-  if ((nav_menu_hidden.classList.toggle = "active")) {
-    nav_menu_hidden.style.display("flex");
-  }
-}
+/*
+const searchIcon = document.querySelector(".searchIcon");
+const search = document.querySelector(".search");
+searchIcon.onclick = function () {
+  search.classList.toggle("active");
+};
+*/
