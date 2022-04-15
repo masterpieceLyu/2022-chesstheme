@@ -45,12 +45,12 @@ addEventListener("scroll", function () {
 const nav_menu = document.querySelector(".header__nav-menu");
 const nav_menu_hidden = document.querySelector(".header__nav-menu-hidden");
 
-nav_menu.addEventListener("click", handleClick);
-
 function handleClick() {
   nav_menu_hidden.classList.toggle("active");
+  nav_menu.classList.toggle("active");
 }
 
+nav_menu.addEventListener("click", handleClick);
 /*
 const searchIcon = document.querySelector(".searchIcon");
 const search = document.querySelector(".search");
