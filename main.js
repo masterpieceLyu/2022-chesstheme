@@ -58,3 +58,19 @@ searchIcon.onclick = function () {
   search.classList.toggle("active");
 };
 */
+
+
+function handleClick(){
+  if(nav_menu_hidden.hasAttribute("active"),nav_menu.hasAttribute("active")) {
+    setTimeout(1000)=>{
+      nav_menu_hidden.classList.toggle("active");
+      nav_menu.classList.toggle("active");
+  }
+  } else {
+     // 애니메이션 재생 시간(1초 == 1000) 후에 명시된 function을 실행함
+     setTimeout(0)=>{
+        nav_menu_hidden.classList.toggle("active");
+        nav_menu.classList.toggle("active");
+     }
+  }
+}
