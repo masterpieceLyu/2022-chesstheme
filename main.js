@@ -1,15 +1,14 @@
+/* ------ 1vh = 884px ------ */
+
+// Main text apear and disapear
 const mainText1 = document.querySelector(".main-main__text__1");
 const mainText2 = document.querySelector(".main-main__text__2");
 const mainText3 = document.querySelectorAll(".main-main__text__3");
-
 const mainText4 = document.querySelector(".main-main2__text__1");
 const mainText5 = document.querySelector(".main-main2__text__2");
 const mainText6 = document.querySelector(".main-main2__text__3");
 const mainText7 = document.querySelector(".main-main2__text__4");
 const movingCrown = document.querySelector(".movingCrown");
-const pointOn = document.querySelector(".pointOn");
-
-/* ------ 1vh = 884px ------ */
 
 addEventListener("scroll", function () {
   let value = this.scrollY;
@@ -42,6 +41,7 @@ addEventListener("scroll", function () {
   }
 });
 
+//hidden menu
 const nav_menu = document.querySelector(".header__nav-menu");
 const nav_menu_hidden = document.querySelector(".header__nav-menu-hidden");
 
@@ -51,26 +51,43 @@ function handleClick() {
 }
 
 nav_menu.addEventListener("click", handleClick);
-/*
-const searchIcon = document.querySelector(".searchIcon");
-const search = document.querySelector(".search");
-searchIcon.onclick = function () {
-  search.classList.toggle("active");
-};
-*/
 
+//scrall pointer function
 
-function handleClick(){
-  if(nav_menu_hidden.hasAttribute("active"),nav_menu.hasAttribute("active")) {
-    setTimeout(1000)=>{
-      nav_menu_hidden.classList.toggle("active");
-      nav_menu.classList.toggle("active");
-  }
-  } else {
-     // 애니메이션 재생 시간(1초 == 1000) 후에 명시된 function을 실행함
-     setTimeout(0)=>{
-        nav_menu_hidden.classList.toggle("active");
-        nav_menu.classList.toggle("active");
-     }
-  }
+const pointOn = document.querySelectorAll("li.pointOn");
+const point = document.querySelectorAll(".point");
+
+addEventListener("scroll", function () {
+  let scrollValue = this.scrollY;
+});
+
+function pointhandleClick1() {
+  pointOn[0].classList.toggle("active");
+  window.scrollTo(0, 884);
 }
+
+function pointhandleClick2() {
+  pointOn[1].classList.toggle("active");
+  window.scrollTo(0, 1768);
+}
+
+function pointhandleClick3() {
+  pointOn[2].classList.toggle("active");
+  window.scrollTo(0, 2612);
+}
+
+function pointhandleClick4() {
+  pointOn[3].classList.toggle("active");
+  window.scrollTo(0, 3496);
+}
+
+function pointhandleClick5() {
+  pointOn[4].classList.toggle("active");
+  window.scrollTo(0, 4380);
+}
+
+pointOn[0].addEventListener("click", pointhandleClick1);
+pointOn[1].addEventListener("click", pointhandleClick2);
+pointOn[2].addEventListener("click", pointhandleClick3);
+pointOn[3].addEventListener("click", pointhandleClick4);
+pointOn[4].addEventListener("click", pointhandleClick5);
