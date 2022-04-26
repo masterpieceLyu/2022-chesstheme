@@ -52,38 +52,58 @@ function handleClick() {
 
 nav_menu.addEventListener("click", handleClick);
 
-//scrall pointer function
-
+//scroll pointer function
 const pointOn = document.querySelectorAll("li.pointOn");
 const point = document.querySelectorAll(".point");
 
 addEventListener("scroll", function () {
   let scrollValue = this.scrollY;
+  console.log(scrollValue);
 });
 
 function pointhandleClick1() {
   pointOn[0].classList.toggle("active");
-  window.scrollTo(0, 884);
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
 }
 
 function pointhandleClick2() {
   pointOn[1].classList.toggle("active");
-  window.scrollTo(0, 1768);
+  window.scrollTo({
+    top: 884,
+    left: 0,
+    behavior: "smooth",
+  });
 }
 
 function pointhandleClick3() {
   pointOn[2].classList.toggle("active");
-  window.scrollTo(0, 2612);
+  window.scrollTo({
+    top: 1768,
+    left: 0,
+    behavior: "smooth",
+  });
 }
 
 function pointhandleClick4() {
   pointOn[3].classList.toggle("active");
-  window.scrollTo(0, 3496);
+  window.scrollTo({
+    top: 2612,
+    left: 0,
+    behavior: "smooth",
+  });
 }
 
 function pointhandleClick5() {
   pointOn[4].classList.toggle("active");
-  window.scrollTo(0, 4380);
+  window.scrollTo({
+    top: 3496,
+    left: 0,
+    behavior: "smooth",
+  });
 }
 
 pointOn[0].addEventListener("click", pointhandleClick1);
