@@ -120,7 +120,7 @@ body {
 .marqueeBox {
   position: absolute;
   left: 0;
-  bottom: 0;
+  top: 0;
   width: 100%;
   background: none;
 }
@@ -144,7 +144,7 @@ body {
 .marquee {
   position: absolute;
   display: inline-block;
-  bottom: 101vh;
+  top: 98vh;
   left: 0;
   width: 100%;
   z-index: 99;
@@ -303,7 +303,7 @@ body {
 .marqueeBox-2 {
   position: absolute;
   left: 0;
-  bottom: 10px;
+  top: 0;
   width: 100%;
   background: none;
   animation: slidemrqueevapear 1.5s ease-in-out;
@@ -312,7 +312,7 @@ body {
 .marquee-2 {
   position: absolute;
   display: inline-block;
-  bottom: 0;
+  top: 198vh;
   left: 0;
   width: 100%;
   z-index: 99;
@@ -361,4 +361,19 @@ body {
     left: -100px;
     opacity: 0;
   }
+}
+
+.main-main3 {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.main-main4 {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.main-main5 {
+  min-height: 100vh;
+  width: 100%;
 }

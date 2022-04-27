@@ -184,12 +184,6 @@
 }
 
 .header__nav-menu-hidden.active {
-  /*
-  top: -1500px;
-  right: -2000px;
-  width: 5000px;
-  height: 5000px;
-  */
   display: block;
   border-radius: 50%;
   background: var(--colorpurple);
@@ -222,17 +216,21 @@
   padding: 0 0 50px 0;
 }
 
-.main-header__left div:nth-child(2) {
+.page_number:first-child::before {
+  content: "01";
   font-size: 25px;
   margin-top: 20px;
 }
 
-.main-header__left div:nth-child(2) span:nth-child(2) {
+.page_number:nth-child(2)::before {
+  content: "05";
+  font-size: 25px;
+  margin-top: 20px;
   margin: 5px 0 0 35px;
   opacity: 0.5;
 }
 
-.main-header__left div:nth-child(2)::before {
+.page_numbers::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -310,11 +308,55 @@
   cursor: pointer;
 }
 
-.pointOn.active .point {
+.point a:hover {
+  cursor: pointer;
+  border: 2px solid rgba(1, 1, 1, 1);
+  transition: 0.3s ease-in-out;
+}
+
+.point.active a {
   border: 2px solid rgba(1, 1, 1, 1);
   background: black;
   transition: 0.3s ease-in-out;
 }
+
+.point:first-child.active ~ .inpage_number {
+  font-size: 20px;
+}
+.point:nth-child(2).active ~ .inpage_number {
+  font-size: 30px;
+}
+.point:nth-child(3).active ~ .inpage_number {
+  font-size: 40px;
+}
+.point:nth-child(4).active ~ .inpage_number {
+  font-size: 50px;
+}
+.point:nth-child(5).active ~ .inpage_number {
+  font-size: 60px;
+}
+
+.inpage_number {
+  position: absolute;
+  left: 0;
+  top
+}
+
+/*
+.main-header__left div:nth-child(2) span:first-child::before {
+  content: "01";
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.main-header__left div:nth-child(2) span:nth-child(2)::before {
+  content: "05";
+  font-size: 25px;
+  margin-top: 20px;
+  margin: 5px 0 0 35px;
+  opacity: 0.5;
+}
+*/
 
 @keyframes menuUnroll {
   from {

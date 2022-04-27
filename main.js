@@ -1,5 +1,3 @@
-/* ------ 1vh = 884px ------ */
-
 // Main text apear and disapear
 const mainText1 = document.querySelector(".main-main__text__1");
 const mainText2 = document.querySelector(".main-main__text__2");
@@ -53,61 +51,36 @@ function handleClick() {
 nav_menu.addEventListener("click", handleClick);
 
 //scroll pointer function
-const pointOn = document.querySelectorAll("li.pointOn");
 const point = document.querySelectorAll(".point");
+const main_section = document.querySelectorAll("main");
 
-addEventListener("scroll", function () {
-  let scrollValue = this.scrollY;
-  console.log(scrollValue);
-});
-
-function pointhandleClick1() {
-  pointOn[0].classList.toggle("active");
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
-  });
+function activeMenu() {
+  let len = main_section.length;
+  while (--len && window.scrollY < main_section[len].offsetTop) {}
+  point.forEach((ltx) => ltx.classList.remove("active"));
+  point[len].classList.add("active");
 }
+activeMenu();
+addEventListener("scroll", activeMenu);
 
-function pointhandleClick2() {
-  pointOn[1].classList.toggle("active");
-  window.scrollTo({
-    top: 884,
-    left: 0,
-    behavior: "smooth",
-  });
-}
+const main_section1_offset = main_section[0].offsetTop;
+const main_section2_offset = main_section[1].offsetTop;
+const main_section3_offset = main_section[2].offsetTop;
+const main_section4_offset = main_section[3].offsetTop;
+const main_section5_offset = main_section[4].offsetTop;
 
-function pointhandleClick3() {
-  pointOn[2].classList.toggle("active");
-  window.scrollTo({
-    top: 1768,
-    left: 0,
-    behavior: "smooth",
-  });
-}
-
-function pointhandleClick4() {
-  pointOn[3].classList.toggle("active");
-  window.scrollTo({
-    top: 2612,
-    left: 0,
-    behavior: "smooth",
-  });
-}
-
-function pointhandleClick5() {
-  pointOn[4].classList.toggle("active");
-  window.scrollTo({
-    top: 3496,
-    left: 0,
-    behavior: "smooth",
-  });
-}
-
-pointOn[0].addEventListener("click", pointhandleClick1);
-pointOn[1].addEventListener("click", pointhandleClick2);
-pointOn[2].addEventListener("click", pointhandleClick3);
-pointOn[3].addEventListener("click", pointhandleClick4);
-pointOn[4].addEventListener("click", pointhandleClick5);
+point[0].onclick = function () {
+  window.scroll({ top: main_section1_offset, behavior: "smooth" });
+};
+point[1].onclick = function () {
+  window.scroll({ top: main_section2_offset, behavior: "smooth" });
+};
+point[2].onclick = function () {
+  window.scroll({ top: main_section3_offset, behavior: "smooth" });
+};
+point[3].onclick = function () {
+  window.scroll({ top: main_section4_offset, behavior: "smooth" });
+};
+point[4].onclick = function () {
+  window.scroll({ top: main_section5_offset, behavior: "smooth" });
+};
