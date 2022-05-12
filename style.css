@@ -26,6 +26,12 @@ body {
   margin: 0;
   text-align: center;
 }
+/* 
+main {
+  border: 1px solid red;
+} */
+
+/* main 1 section */
 
 .main-main {
   width: 100%;
@@ -170,72 +176,7 @@ body {
   font-weight: 900;
 }
 
-@keyframes movingChess {
-  0% {
-    top: 0vh;
-    opacity: 1;
-  }
-  50% {
-    top: -4vh;
-    opacity: 1;
-  }
-  100% {
-    top: 0vh;
-    opacity: 1;
-  }
-}
-
-@keyframes slidemrqueev {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes slidemrqueevapear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes apear {
-  from {
-    transform: scale(70%);
-    opacity: 0;
-  }
-  to {
-    transform: scale(100%);
-    opacity: 1;
-  }
-}
-
-@keyframes disApear {
-  from {
-    transform: scale(100%);
-    opacity: 1;
-  }
-  to {
-    transform: scale(70%);
-    opacity: 0;
-  }
-}
-
-@keyframes slideMainText {
-  from {
-    left: -100px;
-    opacity: 0;
-  }
-  to {
-    left: 0;
-    opacity: 1;
-  }
-}
-
+/* main 2 section */
 .main-main2 {
   width: 100%;
   height: 100vh;
@@ -337,6 +278,339 @@ body {
   font-weight: 900;
 }
 
+/* main 3 section */
+
+.main-main3 {
+  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.main-main3__text {
+  position: absolute;
+  left: 0;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.main-main3__text span:first-child {
+  position: relative;
+  font-size: 60px;
+  font-weight: 900;
+  margin: 0;
+  color: var(--colorblack);
+  opacity: 0;
+}
+.main-main3__text span:nth-child(2) {
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0 0 40px 0;
+  color: #646464;
+  opacity: 0;
+}
+.main-main3__text span:nth-child(3),
+.main-main3__text span:nth-child(4) {
+  position: relative;
+  font-size: 20px;
+  margin: 2px 0;
+  color: #747474;
+  opacity: 0;
+}
+
+.main-main3__text span:nth-child(4) mark {
+  font-weight: 400;
+  color: black;
+  background: none;
+  font-weight: 900;
+}
+
+.wineHands {
+  position: absolute;
+  top: 207vh;
+  right: 200px;
+  width: auto;
+  height: auto;
+  margin-top: 50px;
+  opacity: 0;
+  animation: movingWine 7s ease-in-out infinite;
+}
+
+.main-main3 .wineHands img {
+  height: 830px;
+}
+
+.marqueeBox-3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: none;
+  animation: slidemrqueevapear 1.5s ease-in-out;
+}
+
+.marquee-3 {
+  position: absolute;
+  display: inline-block;
+  top: 298vh;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  white-space: nowrap;
+  background: none;
+  animation: slidemrqueev 20s linear infinite;
+}
+
+.marquee3-2 {
+  animation-delay: -10s;
+}
+
+.marquee-3 span {
+  box-sizing: border-box;
+  color: var(--colorgray);
+  margin-right: 10px;
+}
+
+.marquee-3 span mark {
+  background: none;
+  color: #300046;
+  font-weight: 900;
+}
+
+/* main 4 section */
+.main-main4 {
+  min-height: 100vh;
+  width: 100%;
+}
+.main-main4 {
+  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.main-main4__text {
+  position: absolute;
+  right: 0;
+  margin-right: 250px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.main-main4__text span:first-child {
+  position: relative;
+  font-size: 60px;
+  font-weight: 900;
+  margin: 0;
+  color: var(--colorblack);
+  opacity: 0;
+}
+.main-main4__text span:nth-child(2) {
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0 0 40px 0;
+  color: #646464;
+  opacity: 0;
+}
+.main-main4__text span:nth-child(3),
+.main-main4__text span:nth-child(4) {
+  position: relative;
+  font-size: 20px;
+  margin: 2px 0;
+  color: #747474;
+  opacity: 0;
+}
+
+.main-main4__text span:nth-child(4) mark {
+  font-weight: 400;
+  color: black;
+  background: none;
+  font-weight: 900;
+}
+
+.faceGlasses {
+  position: absolute;
+  top: 315vh;
+  left: 170px;
+  width: auto;
+  height: auto;
+  margin-top: 50px;
+  opacity: 0;
+  animation: movingFaceGlasses 7s ease-in-out infinite;
+}
+
+.main-main4 .faceGlasses img {
+  height: 700px;
+}
+
+.marqueeBox-4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: none;
+  animation: slidemrqueevapear 1.5s ease-in-out;
+}
+
+.marquee-4 {
+  position: absolute;
+  display: inline-block;
+  top: 398vh;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  white-space: nowrap;
+  background: none;
+  animation: slidemrqueev 20s linear infinite;
+}
+
+.marquee4-2 {
+  animation-delay: -10s;
+}
+
+.marquee-4 span {
+  box-sizing: border-box;
+  color: var(--colorgray);
+  margin-right: 10px;
+}
+
+.marquee-4 span mark {
+  background: none;
+  color: #300046;
+  font-weight: 900;
+}
+
+/* main 5 section */
+
+.main-main5 {
+  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.main-main5__text {
+  position: absolute;
+  left: 0;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.main-main5__text span:first-child {
+  position: relative;
+  font-size: 60px;
+  font-weight: 900;
+  margin: 0;
+  color: var(--colorblack);
+  opacity: 0;
+}
+.main-main5__text span:nth-child(2) {
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0 0 40px 0;
+  color: #646464;
+  opacity: 0;
+}
+.main-main5__text span:nth-child(3),
+.main-main5__text span:nth-child(4) {
+  position: relative;
+  font-size: 20px;
+  margin: 2px 0;
+  color: #747474;
+  opacity: 0;
+}
+
+.main-main5__text span:nth-child(4) mark {
+  font-weight: 400;
+  color: black;
+  background: none;
+  font-weight: 900;
+}
+
+.elephantDoor {
+  position: absolute;
+  top: 415vh;
+  right: 60px;
+  width: auto;
+  height: auto;
+  margin-top: 50px;
+  opacity: 0;
+  animation: movingFaceGlasses 7s ease-in-out infinite;
+}
+
+.main-main5 .elephantDoor img {
+  height: 570px;
+}
+
+.marqueeBox-5 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: none;
+  animation: slidemrqueevapear 1.5s ease-in-out;
+}
+
+.marquee-5 {
+  position: absolute;
+  display: inline-block;
+  top: 398vh;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  white-space: nowrap;
+  background: none;
+  animation: slidemrqueev 20s linear infinite;
+}
+
+.marquee5-2 {
+  animation-delay: -10s;
+}
+
+.marquee-5 span {
+  box-sizing: border-box;
+  color: var(--colorgray);
+  margin-right: 10px;
+}
+
+.marquee-5 span mark {
+  background: none;
+  color: #300046;
+  font-weight: 900;
+}
+
+@keyframes movingChess {
+  0% {
+    top: 0vh;
+    opacity: 1;
+  }
+  50% {
+    top: -4vh;
+    opacity: 1;
+  }
+  100% {
+    top: 0vh;
+    opacity: 1;
+  }
+}
+
 @keyframes movingCrown {
   0% {
     opacity: 1;
@@ -352,6 +626,102 @@ body {
   }
 }
 
+@keyframes movingWine {
+  0% {
+    opacity: 1;
+    top: 207vh;
+  }
+  50% {
+    opacity: 1;
+    top: 202vh;
+  }
+  100% {
+    opacity: 1;
+    top: 207vh;
+  }
+}
+
+@keyframes movingGlasses {
+  0% {
+    opacity: 1;
+    top: 315vh;
+  }
+  50% {
+    opacity: 1;
+    top: 310vh;
+  }
+  100% {
+    opacity: 1;
+    top: 315vh;
+  }
+}
+
+@keyframes movingElephantDoor {
+  0% {
+    opacity: 1;
+    top: 415vh;
+  }
+  50% {
+    opacity: 1;
+    top: 410vh;
+  }
+  100% {
+    opacity: 1;
+    top: 415vh;
+  }
+}
+
+@keyframes slidemrqueev {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slidemrqueevapear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes apear {
+  from {
+    transform: scale(70%);
+    opacity: 0;
+  }
+  to {
+    transform: scale(100%);
+    opacity: 1;
+  }
+}
+
+@keyframes disApear {
+  from {
+    transform: scale(100%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(70%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideMainText {
+  from {
+    left: -100px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
 @keyframes slideMainTextDisapear {
   from {
     left: 0;
@@ -361,19 +731,4 @@ body {
     left: -100px;
     opacity: 0;
   }
-}
-
-.main-main3 {
-  min-height: 100vh;
-  width: 100%;
-}
-
-.main-main4 {
-  min-height: 100vh;
-  width: 100%;
-}
-
-.main-main5 {
-  min-height: 100vh;
-  width: 100%;
 }

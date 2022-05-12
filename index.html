@@ -12,13 +12,15 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="main.js"></script>
+    <script defer src="mouse.js"></script>
+    <script defer src="library/gsap-public/minified/gsap.min.js"></script>
   </head>
   <body>
     <div id="wrap">
       <header>
         <header class="main-header">
           <div class="header__nav-logo">
-            <img src="files/logo.png" alt="" />
+            <img src="files/logo5.png" alt="" />
           </div>
           <nav class="header__nav-menu">
             <button class="header__nav-menuBtn">
@@ -65,16 +67,18 @@
               </li>
             </ul>
           </div>
+
+          <div id="cursor"></div>
         </header>
 
         <header class="main-header__left">
           <div>
-            <span>Introducing</span>
-            <span>our company</span>
+            <span id="page-span__1">Introducing</span>
+            <span id="page-span__2">our company</span>
           </div>
           <div class="page_numbers">
-            <span class="page_number"></span>
-            <span class="page_number"></span>
+            <span class="page_number" id="page-number__now">01</span>
+            <span class="page_number" id="page-number__total">05</span>
           </div>
         </header>
 
@@ -89,7 +93,7 @@
         </header>
 
         <div class="main-header__leftEnd">
-          <span>© CHESSIGN</span>
+          <span>© CHESS</span>
           <!-- <span>powered by Friedrich Nietzsche</span> -->
         </div>
       </header>
@@ -104,7 +108,7 @@
             >Get your brand the winning advantage</span
           >
           <span class="main-main__text__3">
-            CHESSIGN은 데이터와 전략에 디자인이라는 가치를 엮어
+            CHESS는 데이터와 전략에 디자인이라는 가치를 엮어
           </span>
           <span class="main-main__text__3">
             세상과 소통하는 <mark>디지털 마케팅 에이전시</mark> 입니다
@@ -170,9 +174,110 @@
           </div>
         </div>
       </main>
-      <main class="main-main3"></main>
-      <main class="main-main4"></main>
-      <main class="main-main5"></main>
+      <main class="main-main3">
+        <div class="main-main3__text">
+          <span class="main-main3__text__1">We DESIGN</span>
+          <span class="main-main3__text__2">your journey to success.</span>
+          <span class="main-main3__text__3">
+            CHESS은 브랜드에 최적화된 'FIT'한
+          </span>
+          <span class="main-main3__text__3 main-main3__text__4">
+            마케팅 설계를 통해 <mark>브랜드를 성장</mark>시킵니다.
+          </span>
+        </div>
+
+        <div class="wineHands">
+          <img src="files/winehands.png" alt="" />
+        </div>
+
+        <div class="marqueeBox-3">
+          <div class="marquee-3">
+            <span><mark>CHESS</mark> DIGITAL MARKETING AGENCY</span>
+            <span><mark>CHESS</mark> DIGITAL MARKETING AGENCY</span>
+            <span><mark>CHESS</mark> DIGITAL MARKETING AGENCY</span>
+            <span><mark>CHESS</mark> DIGITAL MARKETING AGENCY</span>
+            <span><mark>CHESS</mark> DIGITAL MARKETING AGENCY</span>
+            <span><mark>CHESS</mark> DIGITAL MARKETING AGENCY</span>
+          </div>
+          <div class="marquee-3 marquee3-2">
+            <span><mark>CHESS</mark> DIGITAL MARKETING AGENCY</span>
+            <span><mark>CHESS</mark> DIGITAL MARKETING AGENCY</span>
+            <span><mark>CHESS</mark> DIGITAL MARKETING AGENCY</span>
+            <span><mark>CHESS</mark> DIGITAL MARKETING AGENCY</span>
+            <span><mark>CHESS</mark> DIGITAL MARKETING AGENCY</span>
+          </div>
+        </div>
+      </main>
+      <main class="main-main4">
+        <div class="main-main4__text">
+          <span class="main-main4__text__1">More than marketing</span>
+          <span class="main-main4__text__2">#CHESS_INSIGHT</span>
+          <span class="main-main4__text__3"></span>
+          <span class="main-main4__text__3 main-main4__text__4">
+            CHESS의 시선으로 본 <mark>세상</mark>
+          </span>
+        </div>
+
+        <div class="faceGlasses">
+          <img src="files/faceglasses.png" alt="" />
+        </div>
+
+        <div class="marqueeBox-4">
+          <div class="marquee-4">
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+          </div>
+          <div class="marquee-4 marquee4-2">
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+          </div>
+        </div>
+      </main>
+      <main class="main-main5">
+        <div class="main-main5__text">
+          <span class="main-main5__text__1">Let's prove our team.</span>
+          <span class="main-main5__text__2">Let's prove our value.</span>
+          <span class="main-main5__text__3"
+            >CHESS와 함께 브랜드를 성장시키고 싶은</span
+          >
+          <span class="main-main5__text__3 main-main5__text__4">
+            <mark>멋진 파트너</mark> 를 기다리고 있습니다.
+          </span>
+        </div>
+
+        <div class="elephantDoor">
+          <img src="files/elephantpasseddoor.png" alt="" />
+        </div>
+
+        <div class="marqueeBox-5">
+          <div class="marquee-5">
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+          </div>
+          <div class="marquee-5 marquee5-2">
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+            <span>SHOW AND PROVE <mark>YOURSELF</mark></span>
+          </div>
+        </div>
+      </main>
     </div>
   </body>
 </html>

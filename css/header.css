@@ -1,3 +1,12 @@
+#cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  pointer-events: none;
+  z-index: 9999999;
+}
+
 .main-header {
   position: fixed;
   top: 0;
@@ -211,22 +220,23 @@
 .main-header__left div {
   position: relative;
   top: 50%;
+  width: 82px;
   display: flex;
   flex-direction: column;
   padding: 0 0 50px 0;
 }
 
-.page_number:first-child::before {
-  content: "01";
+.page_number:first-child {
   font-size: 25px;
   margin-top: 20px;
+  font-weight: 900;
 }
 
-.page_number:nth-child(2)::before {
-  content: "05";
+.page_number:nth-child(2) {
   font-size: 25px;
   margin-top: 20px;
   margin: 5px 0 0 35px;
+  font-weight: 500;
   opacity: 0.5;
 }
 
@@ -234,14 +244,14 @@
   content: "";
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 55%;
   width: 1px;
-  height: 80px;
+  height: 85px;
   margin-top: -65px;
   margin-left: -10px;
   background-color: black;
   transform: rotate(45deg);
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .main-header__leftEnd {
@@ -320,21 +330,13 @@
   transition: 0.3s ease-in-out;
 }
 
-/*
-.main-header__left div:nth-child(2) span:first-child::before {
-  content: "01";
-  font-size: 25px;
-  margin-top: 20px;
+#page-span__1 {
+  transition: 1s ease;
 }
 
-.main-header__left div:nth-child(2) span:nth-child(2)::before {
-  content: "05";
-  font-size: 25px;
-  margin-top: 20px;
-  margin: 5px 0 0 35px;
-  opacity: 0.5;
+#page-span__2 {
+  transition: 1s ease;
 }
-*/
 
 @keyframes menuUnroll {
   from {
@@ -354,6 +356,17 @@
     opacity: 1;
   }
 
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    transform: scale(0.97);
+    opacity: 0;
+  }
   to {
     transform: scale(1);
     opacity: 1;
