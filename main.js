@@ -80,6 +80,17 @@ nav_menu.addEventListener("click", handleClick);
 //slide contents from scroll
 //slide contents from scroll
 
+//section 1
+addEventListener("scroll", function () {
+  let value = this.scrollY;
+
+  if (value < main_section2_offset / 2) {
+    pageNum.textContent = "01";
+    pageFixedSpan1.textContent = "Introducing";
+    pageFixedSpan2.textContent = "our company";
+  }
+});
+
 //section 2
 addEventListener("scroll", function () {
   let value = this.scrollY;
@@ -88,6 +99,10 @@ addEventListener("scroll", function () {
     value > main_section2_offset - main_section2_offset / 2 &&
     value < main_section3_offset + main_section2_offset / 2
   ) {
+    pageNum.textContent = "02";
+    pageFixedSpan1.textContent = "Our";
+    pageFixedSpan2.textContent = "Service";
+
     mainText4.style.display = "inline";
     mainText5.style.display = "inline";
     mainText6.style.display = "inline";
@@ -118,14 +133,15 @@ addEventListener("scroll", function () {
 //section 3
 addEventListener("scroll", function () {
   let value = this.scrollY;
-  console.log(value);
 
   if (
-    // value >
-    // main_section3_offset - 400
-    value > main_section3_offset - main_section3_offset / 2 &&
-    value < main_section4_offset + main_section3_offset / 2
+    value > main_section3_offset - main_section2_offset / 2 &&
+    value < main_section4_offset - main_section2_offset / 2
   ) {
+    pageNum.textContent = "03";
+    pageFixedSpan1.textContent = "Our";
+    pageFixedSpan2.textContent = "Portfolio";
+
     mainText8.style.display = "inline";
     mainText9.style.display = "inline";
     mainText10.style.display = "inline";
@@ -158,9 +174,13 @@ addEventListener("scroll", function () {
   let value = this.scrollY;
 
   if (
-    value > main_section4_offset - main_section4_offset / 2 &&
-    value < main_section5_offset + main_section4_offset / 2
+    value > main_section4_offset - main_section2_offset / 2 &&
+    value < main_section5_offset + main_section2_offset / 2
   ) {
+    pageNum.textContent = "04";
+    pageFixedSpan1.textContent = "Our";
+    pageFixedSpan2.textContent = "Insight";
+
     mainText12.style.display = "inline";
     mainText13.style.display = "inline";
     mainText14.style.display = "inline";
@@ -192,7 +212,11 @@ addEventListener("scroll", function () {
 addEventListener("scroll", function () {
   let value = this.scrollY;
 
-  if (value > main_section5_offset - 400) {
+  if (value > main_section5_offset - main_section2_offset / 2) {
+    pageNum.textContent = "05";
+    pageFixedSpan1.textContent = "Contact";
+    pageFixedSpan2.textContent = "Us";
+
     mainText16.style.display = "inline";
     mainText17.style.display = "inline";
     mainText18.style.display = "inline";
@@ -220,11 +244,6 @@ addEventListener("scroll", function () {
   }
 });
 
-// mainText16 = document.querySelector(".main-main5__text__1");
-// mainText17 = document.querySelector(".main-main5__text__2");
-// mainText18 = document.querySelector(".main-main5__text__3");
-// mainText19 = document.querySelector(".main-main5__text__4");
-
 //scroll animation
 //scroll animation
 //scroll animation
@@ -232,19 +251,16 @@ addEventListener("scroll", function () {
 const pageFixedSpan1 = document.querySelector("#page-span__1");
 const pageFixedSpan2 = document.querySelector("#page-span__2");
 
-// value > main_section2_offset - main_section2_offset / 2 &&
-// value < main_section3_offset + main_section2_offset / 2
-
 function activeMenu() {
   let len = main_section.length;
   while (--len && window.scrollY < main_section[len].offsetTop) {}
   point.forEach((ltx) => ltx.classList.remove("active"));
   point[len].classList.add("active");
-  pageNum.textContent = "0" + (len + 1);
+  // pageNum.textContent = "0" + (len + 1);
   pageFixedSpan1.style.animation = "fade 0.7s ease-in-out forwards";
   pageFixedSpan2.style.animation = "fade 0.7s ease-in-out forwards";
   pageNum.style.animation = "fade 0.7s ease-in-out forwards";
-
+  /*
   if (len === 0) {
     pageFixedSpan1.textContent = "Introducing";
     pageFixedSpan2.textContent = "our company";
@@ -269,6 +285,7 @@ function activeMenu() {
     pageFixedSpan1.textContent = "Contact";
     pageFixedSpan2.textContent = "Us";
   }
+  */
 }
 activeMenu();
 addEventListener("scroll", activeMenu);
