@@ -24,6 +24,7 @@
   padding: 0px;
   margin-left: 70px;
   z-index: 9999;
+  cursor: pointer;
 }
 
 .header__nav-logo img {
@@ -114,7 +115,7 @@
   border-radius: 50%;
   background: var(--colorpurple);
   z-index: 1;
-  transition: 0.4s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .header__nav-menu-hidden__menu {
@@ -196,7 +197,7 @@
   display: block;
   border-radius: 50%;
   background: var(--colorpurple);
-  transform: scale(4000);
+  transform: scale(5000);
 }
 
 .header__nav-menu-hidden.active + .header__nav-menu-hidden__menu {

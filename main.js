@@ -2,6 +2,8 @@
 const pageNum = document.querySelector("#page-number__now");
 const point = document.querySelectorAll(".point");
 const main_section = document.querySelectorAll("main");
+const pageFixedSpan1 = document.querySelector("#page-span__1");
+const pageFixedSpan2 = document.querySelector("#page-span__2");
 
 // Offset Info
 const main_section1_offset = main_section[0].offsetTop;
@@ -45,25 +47,6 @@ const movingCrown = document.querySelector(".movingCrown");
 const wineHands = document.querySelector(".wineHands");
 const faceGlasses = document.querySelector(".faceGlasses");
 const elephantDoor = document.querySelector(".elephantDoor");
-
-/*
-if (window.scrollY >= main_section2_offset - main_section2_offset / 2) {
-  console.log("!!!");
-
-  mainText4.style.display = "inline";
-  mainText5.style.display = "inline";
-  mainText6.style.display = "inline";
-  mainText7.style.display = "inline";
-  movingCrown.style.display = "block";
-
-  mainText4.style.animation = "slideMainText 1.5s ease-in-out forwards";
-  mainText5.style.animation = "slideMainText 1.5s 0.2s ease-in-out forwards";
-  mainText6.style.animation = "slideMainText 1.5s 0.4s ease-in-out forwards";
-  mainText7.style.animation = "slideMainText 1.5s 0.4s ease-in-out forwards";
-  movingCrown.style.animation =
-    "apear 0.8s 1.3s ease forwards, movingCrown 7s 2s ease-in-out infinite";
-}
-*/
 
 //hidden menu
 const nav_menu = document.querySelector(".header__nav-menu");
@@ -141,6 +124,10 @@ addEventListener("scroll", function () {
     pageNum.textContent = "03";
     pageFixedSpan1.textContent = "Our";
     pageFixedSpan2.textContent = "Portfolio";
+
+    pageNum.classList.toggle("active");
+    pageFixedSpan1.classList.toggle("active");
+    pageFixedSpan2.classList.toggle("active");
 
     mainText8.style.display = "inline";
     mainText9.style.display = "inline";
@@ -247,9 +234,6 @@ addEventListener("scroll", function () {
 //scroll animation
 //scroll animation
 //scroll animation
-
-const pageFixedSpan1 = document.querySelector("#page-span__1");
-const pageFixedSpan2 = document.querySelector("#page-span__2");
 
 function activeMenu() {
   let len = main_section.length;
