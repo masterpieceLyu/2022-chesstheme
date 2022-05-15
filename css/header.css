@@ -1,12 +1,3 @@
-#cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: block;
-  pointer-events: none;
-  z-index: 9999999;
-}
-
 .main-header {
   position: fixed;
   top: 0;
@@ -303,7 +294,6 @@
 .main-header__right ul li a {
   width: 6px;
   height: 6px;
-
   background: transparent;
   border: 2px solid rgba(1, 1, 1, 0.4);
   border-radius: 50%;
@@ -311,7 +301,7 @@
 
 .main-header__right ul li:hover a {
   cursor: pointer;
-  border: 2px solid rgba(1, 1, 1, 1);
+  border: 2px solid var(--colorpurple);
   transition: 0.3s ease-in-out;
 }
 
@@ -321,22 +311,19 @@
 
 .point a:hover {
   cursor: pointer;
-  border: 2px solid rgba(1, 1, 1, 1);
+  border: 2px solid var(--colorpurple);
   transition: 0.3s ease-in-out;
 }
 
 .point.active a {
-  border: 2px solid rgba(1, 1, 1, 1);
-  background: black;
+  border: 2px solid var(--colorpurple);
+  background: var(--colorpurple);
   transition: 0.3s ease-in-out;
 }
 
-#page-span__1 {
-  transition: 1s ease;
-}
-
-#page-span__2 {
-  transition: 1s ease;
+#page-number__now {
+  transition-property: transform, background;
+  transition-duration: 2s;
 }
 
 @keyframes menuUnroll {

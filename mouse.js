@@ -1,6 +1,6 @@
 let mouseCursor = document.getElementById("cursor");
-const Logo = document.querySelector(".header__nav-logo");
 let hiddenMenu = document.querySelectorAll(".header__nav-menu-hidden__menu a");
+const Logo = document.querySelector(".header__nav-logo");
 
 addEventListener("mousemove", cursor);
 
@@ -26,11 +26,10 @@ nav_menu.addEventListener("mouseover", () => {
 });
 
 nav_menu_hidden.addEventListener("mouseleave", () => {
-  mouseCursor.classList.remove("hovered-hidden_menu");
+  mouseCursor.classList.remove("hovered-hidden_menu_box");
 });
 nav_menu_hidden.addEventListener("mouseover", () => {
-  mouseCursor.classList.add("hovered-hidden_menu");
-  console.log(mouseCursor);
+  mouseCursor.classList.add("hovered-hidden_menu_box");
 });
 
 Logo.addEventListener("mouseleave", () => {
@@ -42,9 +41,13 @@ Logo.addEventListener("mouseover", () => {
 
 hiddenMenu.forEach((link) => {
   link.addEventListener("mouseleave", () => {
-    mouseCursor.classList.remove("link-grow");
+    mouseCursor.classList.remove("hovered-hidden_menu");
   });
   link.addEventListener("mouseover", () => {
-    mouseCursor.classList.add("link-grow");
+    mouseCursor.classList.add("hovered-hidden_menu");
   });
 });
+
+if (nav_menu.hasAttribute("active")) {
+  console.log("메뉴 박스 액티브");
+}

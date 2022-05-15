@@ -1,0 +1,327 @@
+@media screen and (max-width: 1024px) /* 메인 오브젝트들 사이즈 - */ {
+  /* header screen size interaction */
+  #page-span__1,
+  #page-span__2 {
+    font-size: 10px;
+  }
+
+  .page_number:first-child {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .page_number:nth-child(2) {
+    font-size: 18px;
+    margin-top: 20px;
+    margin: 10px 0 0 27px;
+  }
+
+  .page_numbers::before {
+    width: 1px;
+    height: 70px;
+    margin-top: -55px;
+    margin-left: -18px;
+    background-color: black;
+    transform: rotate(45deg);
+    opacity: 0.2;
+  }
+
+  .header__nav-menu button::before {
+    font-size: 11px;
+    margin-right: 0px;
+  }
+
+  .main-header__right ul li {
+    padding-top: 10px;
+    margin: 40px 0;
+    transition: 0.5s ease-in-out;
+  }
+
+  .main-header__right ul li a {
+    width: 4px;
+    height: 4px;
+    transition: 0.5s ease-in-out;
+  }
+
+  /* main screen size interaction */
+  .main-main__text {
+    margin-left: 180px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .main-main__centerText {
+    font-size: 11px;
+  }
+
+  .main-main__text span:first-child {
+    position: relative;
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0;
+    color: var(--colorblack);
+    opacity: 0;
+    animation: slideMainText 1.5s ease forwards;
+    transition: 0.5s ease-in-out;
+  }
+  .main-main__text span:nth-child(2) {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 40px 0;
+    transition: 0.5s ease-in-out;
+  }
+  .main-main__text span:nth-child(3),
+  .main-main__text span:nth-child(4) {
+    font-size: 13px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .main-main2__text {
+    margin-right: 180px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .main-main2__text span:first-child {
+    position: relative;
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0;
+    color: var(--colorblack);
+    opacity: 0;
+    animation: slideMainText 1.5s ease forwards;
+    transition: 0.5s ease-in-out;
+  }
+  .main-main2__text span:nth-child(2) {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 40px 0;
+    transition: 0.5s ease-in-out;
+  }
+  .main-main2__text span:nth-child(3),
+  .main-main2__text span:nth-child(4) {
+    font-size: 13px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .main-main3__text {
+    margin-left: 180px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .main-main3__text span:first-child {
+    position: relative;
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0;
+    color: var(--colorblack);
+    opacity: 0;
+    animation: slideMainText 1.5s ease forwards;
+    transition: 0.5s ease-in-out;
+  }
+  .main-main3__text span:nth-child(2) {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 40px 0;
+    transition: 0.5s ease-in-out;
+  }
+  .main-main3__text span:nth-child(3),
+  .main-main3__text span:nth-child(4) {
+    font-size: 13px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .main-main4__text {
+    margin-right: 130px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .main-main4__text span:first-child {
+    position: relative;
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0;
+    color: var(--colorblack);
+    opacity: 0;
+    animation: slideMainText 1.5s ease forwards;
+    transition: 0.5s ease-in-out;
+  }
+  .main-main4__text span:nth-child(2) {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 40px 0;
+    transition: 0.5s ease-in-out;
+  }
+  .main-main4__text span:nth-child(3),
+  .main-main4__text span:nth-child(4) {
+    font-size: 13px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .main-main5__text {
+    margin-left: 180px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .main-main5__text span:first-child {
+    position: relative;
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0;
+    color: var(--colorblack);
+    opacity: 0;
+    animation: slideMainText 1.5s ease forwards;
+    transition: 0.5s ease-in-out;
+  }
+  .main-main5__text span:nth-child(2) {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 40px 0;
+    transition: 0.5s ease-in-out;
+  }
+  .main-main5__text span:nth-child(3),
+  .main-main5__text span:nth-child(4) {
+    font-size: 13px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .movingChess {
+    top: 23vh;
+    right: 80px;
+    width: 400px;
+    transition: 0.5s ease-in-out;
+  }
+  .main-main .movingChess img {
+    width: 400px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .movingCrown {
+    top: 120vh;
+    left: 100px;
+    margin-top: 50px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .main-main2 .movingCrown img {
+    width: 430px;
+  }
+
+  .wineHands {
+    top: 217vh;
+    right: 100px;
+    margin-top: 50px;
+  }
+
+  .main-main3 .wineHands img {
+    height: 520px;
+  }
+
+  .faceGlasses {
+    top: 317vh;
+    left: 90px;
+    margin-top: 50px;
+  }
+
+  .main-main4 .faceGlasses img {
+    height: 500px;
+  }
+
+  .elephantDoor {
+    top: 423vh;
+    right: 0px;
+    margin-top: 50px;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+  }
+
+  .main-main5 .elephantDoor img {
+    height: 360px;
+  }
+
+  @keyframes movingChess {
+    0% {
+      top: 23vh;
+      opacity: 1;
+    }
+    50% {
+      top: 20vh;
+      opacity: 1;
+    }
+    100% {
+      top: 23vh;
+      opacity: 1;
+    }
+  }
+
+  @keyframes movingCrown {
+    0% {
+      opacity: 1;
+      top: 120vh;
+    }
+    50% {
+      opacity: 1;
+      top: 117vh;
+    }
+    100% {
+      opacity: 1;
+      top: 120vh;
+    }
+  }
+
+  @keyframes movingWine {
+    0% {
+      opacity: 1;
+      top: 217vh;
+    }
+    50% {
+      opacity: 1;
+      top: 214vh;
+    }
+    100% {
+      opacity: 1;
+      top: 217vh;
+    }
+  }
+
+  @keyframes movingGlasses {
+    0% {
+      opacity: 1;
+      top: 317vh;
+    }
+    50% {
+      opacity: 1;
+      top: 314vh;
+    }
+    100% {
+      opacity: 1;
+      top: 317vh;
+    }
+  }
+
+  @keyframes movingElephantDoor {
+    0% {
+      opacity: 1;
+      /* top: 415vh; */
+    }
+    50% {
+      opacity: 1;
+      /* top: 410vh; */
+    }
+    100% {
+      opacity: 1;
+      /* top: 415vh; */
+    }
+  }
+}
+
+@media screen and (max-width: 768px) /* 메인 오브젝트들 사이즈 - flex-direction: column*/ {
+}
+
+@media screen and (max-width: 560px) /* 메인 오브젝트들 사이즈 */ {
+}
+@media screen and (max-width: 480px) {
+}

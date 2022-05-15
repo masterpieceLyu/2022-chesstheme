@@ -162,7 +162,7 @@ addEventListener("scroll", function () {
 
   if (
     value > main_section4_offset - main_section2_offset / 2 &&
-    value < main_section5_offset + main_section2_offset / 2
+    value < main_section5_offset - main_section2_offset / 2
   ) {
     pageNum.textContent = "04";
     pageFixedSpan1.textContent = "Our";
@@ -235,44 +235,26 @@ addEventListener("scroll", function () {
 //scroll animation
 //scroll animation
 
-function activeMenu() {
+// value > main_section4_offset - main_section2_offset / 2 &&
+// // value < main_section5_offset - main_section2_offset / 2
+
+// const main_section = document.querySelectorAll("main");
+
+// const main_section1_offset = main_section[0].offsetTop;
+// const main_section2_offset = main_section[1].offsetTop;
+// const main_section3_offset = main_section[2].offsetTop;
+// const main_section4_offset = main_section[3].offsetTop;
+// const main_section5_offset = main_section[4].offsetTop;
+
+function activeSection() {
   let len = main_section.length;
-  while (--len && window.scrollY < main_section[len].offsetTop) {}
+  while ((--len && window.scrollY) < main_section[len].offsetTop) {}
   point.forEach((ltx) => ltx.classList.remove("active"));
   point[len].classList.add("active");
   // pageNum.textContent = "0" + (len + 1);
-  pageFixedSpan1.style.animation = "fade 0.7s ease-in-out forwards";
-  pageFixedSpan2.style.animation = "fade 0.7s ease-in-out forwards";
-  pageNum.style.animation = "fade 0.7s ease-in-out forwards";
-  /*
-  if (len === 0) {
-    pageFixedSpan1.textContent = "Introducing";
-    pageFixedSpan2.textContent = "our company";
-  }
-
-  if (len === 1) {
-    pageFixedSpan1.textContent = "Our";
-    pageFixedSpan2.textContent = "Service";
-  }
-
-  if (len === 2) {
-    pageFixedSpan1.textContent = "Our";
-    pageFixedSpan2.textContent = "Portfolio";
-  }
-
-  if (len === 3) {
-    pageFixedSpan1.textContent = "Our";
-    pageFixedSpan2.textContent = "Insight";
-  }
-
-  if (len === 4) {
-    pageFixedSpan1.textContent = "Contact";
-    pageFixedSpan2.textContent = "Us";
-  }
-  */
 }
-activeMenu();
-addEventListener("scroll", activeMenu);
+activeSection();
+addEventListener("scroll", activeSection);
 
 point[0].onclick = function () {
   window.scroll({ top: main_section1_offset, behavior: "smooth" });

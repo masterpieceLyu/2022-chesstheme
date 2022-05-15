@@ -25,9 +25,17 @@
   transition-property: background, transform;
 }
 
-#cursor.hovered-hidden_menu {
+#cursor.hovered-hidden_menu_box {
   transform: scale(2);
   border: 5px solid red;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+}
+
+#cursor.hovered-hidden_menu {
+  transform: scale(2);
+  border: 2px solid #c992fa;
   background-color: transparent;
   transition: all 0.3s ease;
   transition-property: background, transform;
@@ -139,17 +147,16 @@ main {
 
 .movingChess {
   position: absolute;
-  top: 0;
+  top: 10vh;
   right: 80px;
-  width: 730px;
+  width: 670px;
   height: auto;
-  margin-top: 50px;
   opacity: 0;
   animation: movingChess 7s ease-in-out 1.5s infinite, apear 0.8s 1.3s ease;
 }
 
 .main-main .movingChess img {
-  width: 730px;
+  width: 650px;
 }
 
 .marqueeBox {
@@ -627,15 +634,15 @@ main {
 
 @keyframes movingChess {
   0% {
-    top: 0vh;
+    top: 10vh;
     opacity: 1;
   }
   50% {
-    top: -4vh;
+    top: 6vh;
     opacity: 1;
   }
   100% {
-    top: 0vh;
+    top: 10vh;
     opacity: 1;
   }
 }
