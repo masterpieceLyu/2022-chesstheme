@@ -1,13 +1,14 @@
-## : CHESS PORTFOILO :
+## **: CHESS PORTFOILO :**
 
 <img width="1680" alt="Screen Shot 2022-05-19 at 5 07 29 PM" src="https://user-images.githubusercontent.com/89332618/169244904-db688552-5d96-49e9-842e-02bca7839164.png">
 
-### Main Contents Interaction
+# **Main Contents Interaction**
 
-1. Page Scrolling for Clicked Point nav : 포인트 네비게이션을 통한 클릭 & 스크롤 이벤트
-2. Marquee(Slide Text from right to left) : 텍스트 슬라이드 애니메이션
-3. Hidden menu : MENU 클릭 이벤트를 이용한 ROLL & UNROLL
-4. Cursor Pointer : 마우스 이벤트를 이용한 포인터
+### **1. Page Scrolling for Clicked Point nav : 포인트 네비게이션을 통한 클릭 & 스크롤 이벤트**
+### **2. Marquee(Slide Text from right to left) : 텍스트 슬라이드 애니메이션**
+### **3. Hidden menu : MENU 클릭 이벤트를 이용한 ROLL & UNROLL**
+### **4. Cursor Pointer : 마우스 이벤트를 이용한 포인터**
+
 
 <br></br>
 
@@ -56,5 +57,34 @@ point[4].onclick = function () {
 
 # 3. Hidden menu : MENU 클릭 이벤트를 이용한 ROLL & UNROLL
 <img width="840" alt="menuRolling" src="https://user-images.githubusercontent.com/89332618/169261369-3674d2db-e662-4384-9302-b3fc7e5a976d.gif">
+
+
+
+<br></br>
+
+
+# 4. Cursor Pointer : 마우스 이벤트를 이용한 포인터
+<img width="840" alt="mouseCursor" src="https://user-images.githubusercontent.com/89332618/169262534-79f6f01b-8fa2-4c85-89c7-b4bfe8365e88.gif">
+
+```js
+const Logo = document.querySelector(".header__nav-logo");
+addEventListener("mousemove", cursor);
+
+function cursor(e) {
+  mouseCursor.style.top = e.pageY + "px";
+  mouseCursor.style.left = e.pageX + "px";
+}
+
+Logo.forEach((link) => {
+  link.addEventListener("mouseleave", () => {
+    mouseCursor.classList.remove("link-grow");
+  });
+  link.addEventListener("mouseover", () => {
+    mouseCursor.classList.add("link-grow");
+  });
+});
+```
+
+
 
 
