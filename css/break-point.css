@@ -31,6 +31,11 @@
     margin-right: 0px;
   }
 
+  .main-header__right {
+    top: 23vh;
+    transition: 0.5s ease-in-out;
+  }
+
   .main-header__right ul li {
     padding-top: 10px;
     margin: 40px 0;
@@ -41,6 +46,12 @@
     width: 4px;
     height: 4px;
     transition: 0.5s ease-in-out;
+  }
+
+  .header__nav-menu-hidden {
+    top: 52px;
+    right: 82px;
+    transition: 0.6s ease-in-out;
   }
 
   /* main screen size interaction */
@@ -55,7 +66,7 @@
 
   .main-main__text span:first-child {
     position: relative;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 900;
     margin: 0;
     color: var(--colorblack);
@@ -65,14 +76,14 @@
   }
   .main-main__text span:nth-child(2) {
     position: relative;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     margin: 0 0 40px 0;
     transition: 0.5s ease-in-out;
   }
   .main-main__text span:nth-child(3),
   .main-main__text span:nth-child(4) {
-    font-size: 13px;
+    font-size: 15px;
     transition: 0.5s ease-in-out;
   }
 
@@ -242,18 +253,44 @@
     height: 360px;
   }
 
-  .marquee {
-    font-size: 12px;
-    transition: 1s ease-in-out;
+  .marquee span,
+  .marquee-2 span,
+  .marquee-3 span,
+  .marquee-4 span,
+  .marquee-5 span {
+    font-size: 11px;
   }
 
-  .marquee:first-child span:first-child {
+  .marquee span:last-child,
+  .marquee-2 span:last-child,
+  .marquee-3 span:last-child,
+  .marquee-4 span:last-child,
+  .marquee-5 span:last-child {
     display: none;
   }
 
-  .marquee2 span:last-child {
-    display: none;
+  .marquee span {
+    margin-right: 19px;
   }
+
+  .marquee-2 span {
+    margin-right: 19px;
+  }
+  .marquee-3 span {
+    margin-right: 0px;
+    letter-spacing: unset;
+  }
+
+  .marquee-4 span {
+    margin-right: 36px;
+    letter-spacing: unset;
+  }
+
+  .marquee-5 span {
+    margin-right: 6px;
+    letter-spacing: unset;
+  }
+
   @keyframes movingChess {
     0% {
       top: 23vh;
@@ -392,6 +429,12 @@
     width: 4px;
     height: 4px;
     transition: 0.5s ease-in-out;
+  }
+
+  .header__nav-menu-hidden {
+    top: 52px;
+    right: 62px;
+    transition: 0.7s ease-in-out;
   }
 
   /* main screen size interaction */
@@ -652,6 +695,49 @@
     height: auto;
   }
 
+  .marquee span,
+  .marquee-2 span,
+  .marquee-3 span,
+  .marquee-4 span,
+  .marquee-5 span {
+    font-size: 11px;
+  }
+
+  .marquee span:first-child,
+  .marquee span:last-child,
+  .marquee-2 span:first-child,
+  .marquee-2 span:last-child,
+  .marquee-3 span:first-child,
+  .marquee-3 span:last-child,
+  .marquee-4 span:first-child,
+  .marquee-4 span:last-child,
+  .marquee-5 span:first-child,
+  .marquee-5 span:last-child {
+    display: none;
+  }
+
+  .marquee span {
+    margin-right: 5px;
+  }
+
+  .marquee-2 span {
+    margin-right: 5px;
+  }
+  .marquee-3 span {
+    margin-right: -2px;
+    letter-spacing: -0.3px;
+  }
+
+  .marquee-4 span {
+    margin-right: 0px;
+    letter-spacing: 1px;
+  }
+
+  .marquee-5 span {
+    margin-right: 9px;
+    letter-spacing: -0.5px;
+  }
+
   @keyframes movingChess {
     0% {
       transform: translate(0, 0px);
@@ -810,8 +896,6 @@
     transition: 0.5s ease-in-out;
   }
 
-  /* main screen size interaction */
-
   .header__nav-logo {
     padding: 0;
     margin-left: 20px;
@@ -826,6 +910,14 @@
     transition: 0.5s ease-in-out;
   }
 
+  .header__nav-menu-hidden {
+    top: 42px;
+    right: 50.5px;
+    transition: 0.7s ease-in-out;
+  }
+
+  /* main screen size interaction */
+
   .main-main__text {
     width: 100%;
     margin: 0;
@@ -837,7 +929,7 @@
   }
 
   .main-main__centerText {
-    padding-top: 32px;
+    padding-top: 40px;
     font-size: 8px;
   }
 
@@ -1055,6 +1147,58 @@
   .main-main5 .elephantDoor img {
     width: 280px;
     height: auto;
+  }
+
+  .marquee span,
+  .marquee-2 span,
+  .marquee-3 span,
+  .marquee-4 span,
+  .marquee-5 span {
+    font-size: 11px;
+  }
+
+  .marquee span:first-child,
+  .marquee span:nth-child(5),
+  .marquee span:last-child,
+  .marquee-2 span:first-child,
+  .marquee-2 span:nth-child(5),
+  .marquee-2 span:last-child,
+  .marquee-3 span:first-child,
+  .marquee-3 span:nth-child(5),
+  .marquee-3 span:last-child,
+  .marquee-4 span:first-child,
+  .marquee-4 span:nth-child(5),
+  .marquee-4 span:last-child,
+  .marquee-5 span:first-child,
+  .marquee-5 span:nth-child(5),
+  .marquee-5 span:last-child {
+    display: none;
+  }
+
+  .marquee span {
+    margin-right: 0px;
+    letter-spacing: -1px;
+  }
+
+  .marquee-2 span {
+    margin-right: 0px;
+    letter-spacing: -1px;
+  }
+  .marquee-3 span {
+    font-size: 10px;
+    margin-right: 0px;
+    letter-spacing: -0.9px;
+  }
+
+  .marquee-4 span {
+    margin-right: 0px;
+    letter-spacing: -0.4px;
+  }
+
+  .marquee-5 span {
+    font-size: 10px;
+    margin-right: 2px;
+    letter-spacing: -0.8px;
   }
 
   @keyframes movingChess {

@@ -55,6 +55,7 @@ const nav_menu_hidden = document.querySelector(".header__nav-menu-hidden");
 function handleClick() {
   nav_menu_hidden.classList.toggle("active");
   nav_menu.classList.toggle("active");
+  mouseCursor.classList.toggle("hovered-hidden_menu_box");
 }
 
 nav_menu.addEventListener("click", handleClick);
@@ -69,8 +70,8 @@ addEventListener("scroll", function () {
 
   if (value < main_section2_offset / 2) {
     pageNum.textContent = "01";
-    pageFixedSpan1.textContent = "Introducing";
-    pageFixedSpan2.textContent = "our company";
+    pageFixedSpan1.textContent = "Our";
+    pageFixedSpan2.textContent = "Company";
   }
 });
 
@@ -124,10 +125,6 @@ addEventListener("scroll", function () {
     pageNum.textContent = "03";
     pageFixedSpan1.textContent = "Our";
     pageFixedSpan2.textContent = "Portfolio";
-
-    pageNum.classList.toggle("active");
-    pageFixedSpan1.classList.toggle("active");
-    pageFixedSpan2.classList.toggle("active");
 
     mainText8.style.display = "inline";
     mainText9.style.display = "inline";
@@ -201,8 +198,8 @@ addEventListener("scroll", function () {
 
   if (value > main_section5_offset - main_section2_offset / 2) {
     pageNum.textContent = "05";
-    pageFixedSpan1.textContent = "Contact";
-    pageFixedSpan2.textContent = "Us";
+    pageFixedSpan1.textContent = "Our";
+    pageFixedSpan2.textContent = "Contact";
 
     mainText16.style.display = "inline";
     mainText17.style.display = "inline";
@@ -231,27 +228,15 @@ addEventListener("scroll", function () {
   }
 });
 
-//scroll animation
-//scroll animation
-//scroll animation
-
-// value > main_section4_offset - main_section2_offset / 2 &&
-// // value < main_section5_offset - main_section2_offset / 2
-
-// const main_section = document.querySelectorAll("main");
-
-// const main_section1_offset = main_section[0].offsetTop;
-// const main_section2_offset = main_section[1].offsetTop;
-// const main_section3_offset = main_section[2].offsetTop;
-// const main_section4_offset = main_section[3].offsetTop;
-// const main_section5_offset = main_section[4].offsetTop;
+//scrolling
+//scrolling
+//scrolling
 
 function activeSection() {
   let len = main_section.length;
   while ((--len && window.scrollY) < main_section[len].offsetTop) {}
   point.forEach((ltx) => ltx.classList.remove("active"));
   point[len].classList.add("active");
-  // pageNum.textContent = "0" + (len + 1);
 }
 activeSection();
 addEventListener("scroll", activeSection);

@@ -1,5 +1,6 @@
 let mouseCursor = document.getElementById("cursor");
 let hiddenMenu = document.querySelectorAll(".header__nav-menu-hidden__menu a");
+let activeHiddenMenu = document.querySelector(".hovered-hidden_menu");
 const Logo = document.querySelector(".header__nav-logo");
 
 addEventListener("mousemove", cursor);
@@ -25,13 +26,6 @@ nav_menu.addEventListener("mouseover", () => {
   mouseCursor.classList.add("link-grow");
 });
 
-nav_menu_hidden.addEventListener("mouseleave", () => {
-  mouseCursor.classList.remove("hovered-hidden_menu_box");
-});
-nav_menu_hidden.addEventListener("mouseover", () => {
-  mouseCursor.classList.add("hovered-hidden_menu_box");
-});
-
 Logo.addEventListener("mouseleave", () => {
   mouseCursor.classList.remove("link-grow");
 });
@@ -47,7 +41,3 @@ hiddenMenu.forEach((link) => {
     mouseCursor.classList.add("hovered-hidden_menu");
   });
 });
-
-if (nav_menu.hasAttribute("active")) {
-  console.log("메뉴 박스 액티브");
-}

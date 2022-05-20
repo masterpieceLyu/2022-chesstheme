@@ -26,16 +26,14 @@
 }
 
 #cursor.hovered-hidden_menu_box {
-  transform: scale(2);
-  border: 5px solid red;
-  background-color: transparent;
+  background: #b96ffa;
   transition: all 0.3s ease;
   transition-property: background, transform;
 }
 
 #cursor.hovered-hidden_menu {
   transform: scale(2);
-  border: 2px solid #c992fa;
+  border: 2px solid #b96ffa;
   background-color: transparent;
   transition: all 0.3s ease;
   transition-property: background, transform;
@@ -83,7 +81,7 @@ main {
   position: absolute;
   top: 0;
   left: auto;
-  padding-top: 50px;
+  padding-top: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,6 +150,7 @@ main {
   width: 670px;
   height: auto;
   opacity: 0;
+  z-index: -1;
   animation: movingChess 7s ease-in-out 1.5s infinite, apear 0.8s 1.3s ease;
 }
 
@@ -188,7 +187,7 @@ main {
   z-index: 99;
   white-space: nowrap;
   background: none;
-  animation: slidemrqueev 20s linear infinite;
+  animation: slidemarquee 20s linear infinite;
 }
 
 .marquee2 {
@@ -267,6 +266,7 @@ main {
   height: auto;
   margin-top: 50px;
   opacity: 0;
+  z-index: -1;
 }
 
 .main-main2 .movingCrown img {
@@ -279,7 +279,7 @@ main {
   top: 0;
   width: 100%;
   background: none;
-  animation: slidemrqueevapear 1.5s ease-in-out;
+  animation: slidemarqueeapear 1.5s ease-in-out;
 }
 
 .marquee-2 {
@@ -291,7 +291,7 @@ main {
   z-index: 99;
   white-space: nowrap;
   background: none;
-  animation: slidemrqueev 20s linear infinite;
+  animation: slidemarquee 20s linear infinite;
 }
 
 .marquee2-2 {
@@ -371,6 +371,7 @@ main {
   height: auto;
   margin-top: 50px;
   opacity: 0;
+  z-index: -1;
   animation: movingWine 7s ease-in-out infinite;
 }
 
@@ -384,7 +385,7 @@ main {
   top: 0;
   width: 100%;
   background: none;
-  animation: slidemrqueevapear 1.5s ease-in-out;
+  animation: slidemarqueeapear 1.5s ease-in-out;
 }
 
 .marquee-3 {
@@ -396,7 +397,7 @@ main {
   z-index: 99;
   white-space: nowrap;
   background: none;
-  animation: slidemrqueev 20s linear infinite;
+  animation: slidemarquee 20s linear infinite;
 }
 
 .marquee3-2 {
@@ -407,6 +408,7 @@ main {
   box-sizing: border-box;
   color: var(--colorgray);
   margin-right: 10px;
+  letter-spacing: -1px;
 }
 
 .marquee-3 span mark {
@@ -479,6 +481,7 @@ main {
   height: auto;
   margin-top: 50px;
   opacity: 0;
+  z-index: -1;
   animation: movingFaceGlasses 7s ease-in-out infinite;
 }
 
@@ -492,7 +495,7 @@ main {
   top: 0;
   width: 100%;
   background: none;
-  animation: slidemrqueevapear 1.5s ease-in-out;
+  animation: slidemarqueeapear 1.5s ease-in-out;
 }
 
 .marquee-4 {
@@ -504,7 +507,7 @@ main {
   z-index: 99;
   white-space: nowrap;
   background: none;
-  animation: slidemrqueev 20s linear infinite;
+  animation: slidemarquee 20s linear infinite;
 }
 
 .marquee4-2 {
@@ -514,7 +517,8 @@ main {
 .marquee-4 span {
   box-sizing: border-box;
   color: var(--colorgray);
-  margin-right: 10px;
+  margin-right: 17px;
+  letter-spacing: 0.5px;
 }
 
 .marquee-4 span mark {
@@ -584,6 +588,7 @@ main {
   height: auto;
   margin-top: 50px;
   opacity: 0;
+  z-index: -1;
   animation: movingFaceGlasses 7s ease-in-out infinite;
 }
 
@@ -597,7 +602,7 @@ main {
   top: 0;
   width: 100%;
   background: none;
-  animation: slidemrqueevapear 1.5s ease-in-out;
+  animation: slidemarqueeapear 1.5s ease-in-out;
 }
 
 .marquee-5 {
@@ -609,7 +614,7 @@ main {
   z-index: 99;
   white-space: nowrap;
   background: none;
-  animation: slidemrqueev 20s linear infinite;
+  animation: slidemarquee 20s linear infinite;
 }
 
 .marquee5-2 {
@@ -620,6 +625,7 @@ main {
   box-sizing: border-box;
   color: var(--colorgray);
   margin-right: 10px;
+  letter-spacing: -0.8px;
 }
 
 .marquee-5 span mark {
@@ -703,7 +709,7 @@ main {
   }
 }
 
-@keyframes slidemrqueev {
+@keyframes slidemarquee {
   0% {
     transform: translateX(100%);
   }
@@ -712,7 +718,7 @@ main {
   }
 }
 
-@keyframes slidemrqueevapear {
+@keyframes slidemarqueeapear {
   from {
     opacity: 0;
   }
