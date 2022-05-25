@@ -145,9 +145,9 @@ main {
 
 .movingChess {
   position: absolute;
-  top: 10vh;
-  right: 80px;
-  width: 670px;
+  top: 18vh;
+  right: 120px;
+  width: 600px;
   height: auto;
   opacity: 0;
   z-index: -1;
@@ -155,7 +155,7 @@ main {
 }
 
 .main-main .movingChess img {
-  width: 650px;
+  width: 580px;
 }
 
 .marqueeBox {
@@ -260,7 +260,7 @@ main {
 
 .movingCrown {
   position: absolute;
-  top: 107vh;
+  top: 115vh;
   left: 200px;
   width: auto;
   height: auto;
@@ -270,7 +270,7 @@ main {
 }
 
 .main-main2 .movingCrown img {
-  width: 700px;
+  width: 600px;
 }
 
 .marqueeBox-2 {
@@ -365,8 +365,8 @@ main {
 
 .wineHands {
   position: absolute;
-  top: 207vh;
-  right: 200px;
+  top: 217vh;
+  right: 170px;
   width: auto;
   height: auto;
   margin-top: 50px;
@@ -376,7 +376,7 @@ main {
 }
 
 .main-main3 .wineHands img {
-  height: 830px;
+  height: 600px;
 }
 
 .marqueeBox-3 {
@@ -476,7 +476,7 @@ main {
 .faceGlasses {
   position: absolute;
   top: 315vh;
-  left: 170px;
+  left: 140px;
   width: auto;
   height: auto;
   margin-top: 50px;
@@ -486,7 +486,7 @@ main {
 }
 
 .main-main4 .faceGlasses img {
-  height: 700px;
+  height: 580px;
 }
 
 .marqueeBox-4 {
@@ -582,8 +582,8 @@ main {
 
 .elephantDoor {
   position: absolute;
-  top: 415vh;
-  right: 60px;
+  top: 418vh;
+  right: 80px;
   width: auto;
   height: auto;
   margin-top: 50px;
@@ -593,7 +593,7 @@ main {
 }
 
 .main-main5 .elephantDoor img {
-  height: 570px;
+  height: 580px;
 }
 
 .marqueeBox-5 {
@@ -636,15 +636,15 @@ main {
 
 @keyframes movingChess {
   0% {
-    top: 10vh;
+    top: 18vh;
     opacity: 1;
   }
   50% {
-    top: 6vh;
+    top: 14vh;
     opacity: 1;
   }
   100% {
-    top: 10vh;
+    top: 18vh;
     opacity: 1;
   }
 }
@@ -652,30 +652,30 @@ main {
 @keyframes movingCrown {
   0% {
     opacity: 1;
-    top: 107vh;
+    top: 115vh;
   }
   50% {
     opacity: 1;
-    top: 102vh;
+    top: 111vh;
   }
   100% {
     opacity: 1;
-    top: 107vh;
+    top: 115vh;
   }
 }
 
 @keyframes movingWine {
   0% {
     opacity: 1;
-    top: 207vh;
+    top: 217vh;
   }
   50% {
     opacity: 1;
-    top: 202vh;
+    top: 212vh;
   }
   100% {
     opacity: 1;
-    top: 207vh;
+    top: 217vh;
   }
 }
 
@@ -697,15 +697,15 @@ main {
 @keyframes movingElephantDoor {
   0% {
     opacity: 1;
-    top: 415vh;
+    top: 418vh;
   }
   50% {
     opacity: 1;
-    top: 410vh;
+    top: 414vh;
   }
   100% {
     opacity: 1;
-    top: 415vh;
+    top: 418vh;
   }
 }
 
