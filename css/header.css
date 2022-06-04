@@ -211,12 +211,12 @@
   width: 82px;
   display: flex;
   flex-direction: column;
-  padding: 0 0 50px 0;
+  padding: 25px;
+  z-index: 99999;
 }
 
 .page_number:first-child {
   font-size: 25px;
-  margin-top: 20px;
   font-weight: 900;
 }
 
@@ -235,7 +235,7 @@
   top: 55%;
   width: 1px;
   height: 85px;
-  margin-top: -65px;
+  margin-top: -48px;
   margin-left: -10px;
   background-color: black;
   transform: rotate(45deg);
