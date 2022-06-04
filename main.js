@@ -81,7 +81,7 @@ addEventListener("scroll", function () {
 
   if (
     value > main_section2_offset - main_section2_offset / 2 &&
-    value < main_section3_offset + main_section2_offset / 2
+    value < main_section3_offset - main_section2_offset / 2
   ) {
     pageNum.textContent = "02";
     pageFixedSpan1.textContent = "Our";
@@ -91,20 +91,20 @@ addEventListener("scroll", function () {
     mainText5.style.display = "inline";
     mainText6.style.display = "inline";
     mainText7.style.display = "inline";
-    movingChess2.style.display = "block";
-
     mainText4.style.animation = "slideMainText 1.5s ease-in-out forwards";
     mainText5.style.animation = "slideMainText 1.5s 0.2s ease-in-out forwards";
     mainText6.style.animation = "slideMainText 1.5s 0.4s ease-in-out forwards";
     mainText7.style.animation = "slideMainText 1.5s 0.4s ease-in-out forwards";
+
+    movingChess2.style.display = "block";
     movingChess2.style.animation =
-      "apear 0.8s 1.3s ease forwards, movingChess 5s ease-in-out 2.1s infinite;";
+      "apear 0.8s 1.3s ease forwards, movingChess 5s ease-in-out 2.1s infinite";
   } else {
-    mainText4.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
-    mainText5.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
-    mainText6.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
-    mainText7.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
-    movingChess2.style.animation = "disApear 0.8s 2.1s ease forwards";
+    mainText4.style.animation = "slideMainTextDisapear 1.5s ease-in-out";
+    mainText5.style.animation = "slideMainTextDisapear 1.5s ease-in-out";
+    mainText6.style.animation = "slideMainTextDisapear 1.5s ease-in-out";
+    mainText7.style.animation = "slideMainTextDisapear 1.5s ease-in-out";
+    movingChess2.style.animation = "disApear 1.5s ease-in-out";
 
     mainText4.style.animation =
       "slideMainTextDisplayNone 0.1s 1.5 ease-in-out forward";
@@ -135,26 +135,31 @@ addEventListener("scroll", function () {
     mainText9.style.display = "inline";
     mainText10.style.display = "inline";
     mainText11.style.display = "inline";
-    movingChess3.style.display = "block";
-
     mainText8.style.animation = "slideMainText 1.5s ease-in-out forwards";
     mainText9.style.animation = "slideMainText 1.5s 0.2s ease-in-out forwards";
     mainText10.style.animation = "slideMainText 1.5s 0.4s ease-in-out forwards";
     mainText11.style.animation = "slideMainText 1.5s 0.4s ease-in-out forwards";
+
+    movingChess3.style.display = "block";
     movingChess3.style.animation =
-      "apear 0.8s 1.3s ease forwards, movingChess 5s ease-in-out 2.1s infinite;";
+      "apear 0.8s 1.3s ease forwards, movingChess 5s ease-in-out 2.1s infinite";
   } else {
-    mainText8.style.display = "none";
-    mainText9.style.display = "none";
-    mainText10.style.display = "none";
-    mainText11.style.display = "none";
-    movingChess3.style.display = "none";
+    mainText8.style.display =
+      "slideMainTextDisplayNone 0.1s 1.5 ease-in-out forward";
+    mainText9.style.display =
+      "slideMainTextDisplayNone 0.1s 1.5 ease-in-out forward";
+    mainText10.style.display =
+      "slideMainTextDisplayNone 0.1s 1.5 ease-in-out forward";
+    mainText11.style.display =
+      "slideMainTextDisplayNone 0.1s 1.5 ease-in-out forward";
+    movingChess3.style.display =
+      "slideMainTextDisplayNone 0.1s 1.5 ease-in-out forward";
 
     mainText8.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
     mainText9.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
     mainText10.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
     mainText11.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
-    movingChess3.style.animation = "disApear 0.8s 2.1s ease forwards";
+    movingChess3.style.animation = "disApear 1.5s ease-in-out";
   }
 });
 
@@ -174,26 +179,31 @@ addEventListener("scroll", function () {
     mainText13.style.display = "inline";
     mainText14.style.display = "inline";
     mainText15.style.display = "inline";
-    movingChess4.style.display = "block";
-
     mainText12.style.animation = "slideMainText 1.5s ease-in-out forwards";
     mainText13.style.animation = "slideMainText 1.5s 0.2s ease-in-out forwards";
     mainText14.style.animation = "slideMainText 1.5s 0.4s ease-in-out forwards";
     mainText15.style.animation = "slideMainText 1.5s 0.4s ease-in-out forwards";
+
+    movingChess4.style.display = "block";
     movingChess4.style.animation =
-      "apear 0.8s 1.3s ease forwards, movingChess 5s ease-in-out 2.1s infinite;";
+      "apear 0.8s 1.3s ease forwards, movingChess 5s ease-in-out 2.1s infinite";
   } else {
-    mainText12.style.display = "none";
-    mainText13.style.display = "none";
-    mainText14.style.display = "none";
-    mainText15.style.display = "none";
-    movingChess4.style.display = "none";
+    mainText12.style.display =
+      "slideMainTextDisplayNone 0.1s 1.5 ease-in-out forward";
+    mainText13.style.display =
+      "slideMainTextDisplayNone 0.1s 1.5 ease-in-out forward";
+    mainText14.style.display =
+      "slideMainTextDisplayNone 0.1s 1.5 ease-in-out forward";
+    mainText15.style.display =
+      "slideMainTextDisplayNone 0.1s 1.5 ease-in-out forward";
+    movingChess4.style.display =
+      "slideMainTextDisplayNone 0.1s 1.5 ease-in-out forward";
 
     mainText12.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
     mainText13.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
     mainText14.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
     mainText15.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
-    movingChess4.style.animation = "disApear 0.8s 2.1s ease forwards";
+    movingChess4.style.animation = "disApear 1.5s ease-in-out";
   }
 });
 
@@ -210,26 +220,31 @@ addEventListener("scroll", function () {
     mainText17.style.display = "inline";
     mainText18.style.display = "inline";
     mainText19.style.display = "inline";
-    movingChess5.style.display = "block";
-
     mainText16.style.animation = "slideMainText 1.5s ease-in-out forwards";
     mainText17.style.animation = "slideMainText 1.5s 0.2s ease-in-out forwards";
     mainText18.style.animation = "slideMainText 1.5s 0.4s ease-in-out forwards";
     mainText19.style.animation = "slideMainText 1.5s 0.4s ease-in-out forwards";
+
+    movingChess5.style.display = "block";
     movingChess5.style.animation =
-      "apear 0.8s 1.3s ease forwards, movingChess 5s ease-in-out 2.1s infinite;";
+      "apear 0.8s 1.3s ease forwards, movingChess 5s ease-in-out 2.1s infinite";
   } else {
-    mainText16.style.display = "none";
-    mainText17.style.display = "none";
-    mainText18.style.display = "none";
-    mainText19.style.display = "none";
-    movingChess5.style.display = "none";
+    mainText16.style.display =
+      "slideMainTextDisplayNone 0.1s 1.5 ease-in-out forward";
+    mainText17.style.display =
+      "slideMainTextDisplayNone 0.1s 1.5 ease-in-out forward";
+    mainText18.style.display =
+      "slideMainTextDisplayNone 0.1s 1.5 ease-in-out forward";
+    mainText19.style.display =
+      "slideMainTextDisplayNone 0.1s 1.5 ease-in-out forward";
+    movingChess5.style.display =
+      "slideMainTextDisplayNone 0.1s 1.5 ease-in-out forward";
 
     mainText16.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
     mainText17.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
     mainText18.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
     mainText19.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
-    movingChess5.style.animation = "disApear 0.8s 2.1s ease forwards";
+    movingChess5.style.animation = "disApear 1.5s ease-in-out";
   }
 });
 

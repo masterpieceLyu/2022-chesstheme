@@ -656,9 +656,11 @@ body {
 
 @keyframes slideMainTextDisplayNone {
   from {
+    opacity: 1;
   }
   to {
     display: none;
+    opacity: 0;
   }
 }
 
@@ -675,12 +677,12 @@ body {
 
 @keyframes disApear {
   from {
-    transform: translate(-50%, -50%) scale(70%);
-    opacity: 0;
-  }
-  to {
     transform: translate(-50%, -50%) scale(100%);
     opacity: 1;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(70%);
+    opacity: 0;
   }
 }
 
