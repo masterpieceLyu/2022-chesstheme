@@ -68,6 +68,7 @@ body {
 
 /* main 1 section */
 .main-main {
+  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -142,45 +143,38 @@ body {
   font-weight: 900;
 }
 
-.movingChess {
+.movingChess1 {
   position: absolute;
-  top: 20vh;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
   right: 120px;
   width: 600px;
   height: auto;
   opacity: 0;
   z-index: -1;
-  animation: movingChess 7s ease-in-out 1.5s infinite, apear 0.8s 1.3s ease;
+  animation: apear 0.8s 1.3s ease forwards,
+    movingChess 5s ease-in-out 2.1s infinite;
 }
 
-.main-main .movingChess img {
-  width: 580px;
+.main-main .movingChess1 img {
+  height: 600px;
 }
 
 .marqueeBox {
   position: absolute;
   left: 0;
-  top: 0;
+  bottom: 1vh;
   width: 100%;
+  height: 3vh;
   background: none;
+  overflow: hidden;
 }
-
-/* .marqueeBox::before {
-  content: "";
-  z-index: 999;
-  width: 5%;
-  height: 50px;
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-} */
 
 .marquee {
   position: absolute;
   display: inline-block;
-  top: 98vh;
+  bottom: 0;
   left: 0;
   width: 100%;
   z-index: 99;
@@ -208,6 +202,7 @@ body {
 
 /* main 2 section */
 .main-main2 {
+  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -257,34 +252,36 @@ body {
   font-weight: 900;
 }
 
-.movingCrown {
+.movingChess2 {
   position: absolute;
-  top: 115vh;
-  left: 200px;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
   width: auto;
   height: auto;
-  margin-top: 50px;
   opacity: 0;
   z-index: -1;
 }
 
-.main-main2 .movingCrown img {
+.main-main2 .movingChess2 img {
   width: 600px;
 }
 
 .marqueeBox-2 {
   position: absolute;
   left: 0;
-  top: 0;
+  bottom: 1vh;
   width: 100%;
+  height: 3vh;
   background: none;
+  overflow: hidden;
   animation: slidemarqueeapear 1.5s ease-in-out;
 }
 
 .marquee-2 {
   position: absolute;
   display: inline-block;
-  top: 198vh;
+  bottom: 0;
   left: 0;
   width: 100%;
   z-index: 99;
@@ -312,6 +309,7 @@ body {
 /* main 3 section */
 
 .main-main3 {
+  position: relative;
   min-height: 100vh;
   width: 100%;
   height: 100vh;
@@ -362,35 +360,36 @@ body {
   font-weight: 900;
 }
 
-.wineHands {
+.movingChess3 {
   position: absolute;
-  top: 217vh;
-  right: 170px;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
   width: auto;
   height: auto;
-  margin-top: 50px;
   opacity: 0;
   z-index: -1;
-  animation: movingWine 7s ease-in-out infinite;
 }
 
-.main-main3 .wineHands img {
+.main-main3 .movingChess3 img {
   height: 600px;
 }
 
 .marqueeBox-3 {
   position: absolute;
   left: 0;
-  top: 0;
+  bottom: 1vh;
   width: 100%;
+  height: 3vh;
   background: none;
+  overflow: hidden;
   animation: slidemarqueeapear 1.5s ease-in-out;
 }
 
 .marquee-3 {
   position: absolute;
   display: inline-block;
-  top: 298vh;
+  bottom: 0;
   left: 0;
   width: 100%;
   z-index: 99;
@@ -418,10 +417,7 @@ body {
 
 /* main 4 section */
 .main-main4 {
-  min-height: 100vh;
-  width: 100%;
-}
-.main-main4 {
+  position: relative;
   min-height: 100vh;
   width: 100%;
   height: 100vh;
@@ -472,35 +468,36 @@ body {
   font-weight: 900;
 }
 
-.faceGlasses {
+.movingChess4 {
   position: absolute;
-  top: 315vh;
-  left: 140px;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
   width: auto;
   height: auto;
-  margin-top: 50px;
   opacity: 0;
   z-index: -1;
-  animation: movingFaceGlasses 7s ease-in-out infinite;
 }
 
-.main-main4 .faceGlasses img {
-  height: 580px;
+.main-main4 .movingChess4 img {
+  height: 600px;
 }
 
 .marqueeBox-4 {
   position: absolute;
   left: 0;
-  top: 0;
+  bottom: 1vh;
   width: 100%;
+  height: 3vh;
   background: none;
+  overflow: hidden;
   animation: slidemarqueeapear 1.5s ease-in-out;
 }
 
 .marquee-4 {
   position: absolute;
   display: inline-block;
-  top: 398vh;
+  bottom: 0;
   left: 0;
   width: 100%;
   z-index: 99;
@@ -529,6 +526,7 @@ body {
 /* main 5 section */
 
 .main-main5 {
+  position: relative;
   min-height: 100vh;
   width: 100%;
   height: 100vh;
@@ -579,35 +577,36 @@ body {
   font-weight: 900;
 }
 
-.elephantDoor {
+.movingChess5 {
   position: absolute;
-  top: 418vh;
-  right: 80px;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
   width: auto;
   height: auto;
-  margin-top: 50px;
   opacity: 0;
   z-index: -1;
-  animation: movingFaceGlasses 7s ease-in-out infinite;
 }
 
-.main-main5 .elephantDoor img {
-  height: 580px;
+.main-main5 .movingChess5 img {
+  height: 600px;
 }
 
 .marqueeBox-5 {
   position: absolute;
   left: 0;
-  top: 0;
+  bottom: 1vh;
   width: 100%;
+  height: 3vh;
   background: none;
+  overflow: hidden;
   animation: slidemarqueeapear 1.5s ease-in-out;
 }
 
 .marquee-5 {
   position: absolute;
   display: inline-block;
-  top: 498vh;
+  bottom: 0;
   left: 0;
   width: 100%;
   z-index: 99;
@@ -633,121 +632,6 @@ body {
   font-weight: 900;
 }
 
-@keyframes movingChess {
-  0% {
-    top: 20vh;
-    opacity: 1;
-  }
-  50% {
-    top: 16vh;
-    opacity: 1;
-  }
-  100% {
-    top: 20vh;
-    opacity: 1;
-  }
-}
-
-@keyframes movingCrown {
-  0% {
-    opacity: 1;
-    top: 115vh;
-  }
-  50% {
-    opacity: 1;
-    top: 111vh;
-  }
-  100% {
-    opacity: 1;
-    top: 115vh;
-  }
-}
-
-@keyframes movingWine {
-  0% {
-    opacity: 1;
-    top: 217vh;
-  }
-  50% {
-    opacity: 1;
-    top: 212vh;
-  }
-  100% {
-    opacity: 1;
-    top: 217vh;
-  }
-}
-
-@keyframes movingGlasses {
-  0% {
-    opacity: 1;
-    top: 315vh;
-  }
-  50% {
-    opacity: 1;
-    top: 310vh;
-  }
-  100% {
-    opacity: 1;
-    top: 315vh;
-  }
-}
-
-@keyframes movingElephantDoor {
-  0% {
-    opacity: 1;
-    top: 418vh;
-  }
-  50% {
-    opacity: 1;
-    top: 414vh;
-  }
-  100% {
-    opacity: 1;
-    top: 418vh;
-  }
-}
-
-@keyframes slidemarquee {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes slidemarqueeapear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes apear {
-  from {
-    transform: scale(70%);
-    opacity: 0;
-  }
-  to {
-    transform: scale(100%);
-    opacity: 1;
-  }
-}
-
-@keyframes disApear {
-  from {
-    transform: scale(100%);
-    opacity: 1;
-  }
-  to {
-    transform: scale(70%);
-    opacity: 0;
-  }
-}
-
 @keyframes slideMainText {
   from {
     left: -100px;
@@ -767,5 +651,68 @@ body {
   to {
     left: -100px;
     opacity: 0;
+  }
+}
+
+@keyframes slideMainTextDisplayNone {
+  from {
+  }
+  to {
+    display: none;
+  }
+}
+
+@keyframes apear {
+  from {
+    transform: translate(-50%, -50%) scale(70%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(100%);
+    opacity: 1;
+  }
+}
+
+@keyframes disApear {
+  from {
+    transform: translate(-50%, -50%) scale(70%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(100%);
+    opacity: 1;
+  }
+}
+
+@keyframes movingChess {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -46%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+@keyframes slidemarquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slidemarqueeapear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

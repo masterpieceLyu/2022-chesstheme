@@ -43,10 +43,10 @@ const mainText17 = document.querySelector(".main-main5__text__2");
 const mainText18 = document.querySelector(".main-main5__text__3");
 const mainText19 = document.querySelector(".main-main5__text__4");
 
-const movingCrown = document.querySelector(".movingCrown");
-const wineHands = document.querySelector(".wineHands");
-const faceGlasses = document.querySelector(".faceGlasses");
-const elephantDoor = document.querySelector(".elephantDoor");
+const movingChess2 = document.querySelector(".movingChess2");
+const movingChess3 = document.querySelector(".movingChess3");
+const movingChess4 = document.querySelector(".movingChess4");
+const movingChess5 = document.querySelector(".movingChess5");
 
 //hidden menu
 const nav_menu = document.querySelector(".header__nav-menu");
@@ -91,26 +91,31 @@ addEventListener("scroll", function () {
     mainText5.style.display = "inline";
     mainText6.style.display = "inline";
     mainText7.style.display = "inline";
-    movingCrown.style.display = "block";
+    movingChess2.style.display = "block";
 
     mainText4.style.animation = "slideMainText 1.5s ease-in-out forwards";
     mainText5.style.animation = "slideMainText 1.5s 0.2s ease-in-out forwards";
     mainText6.style.animation = "slideMainText 1.5s 0.4s ease-in-out forwards";
     mainText7.style.animation = "slideMainText 1.5s 0.4s ease-in-out forwards";
-    movingCrown.style.animation =
-      "apear 0.8s 1.3s ease forwards, movingCrown 7s 2s ease-in-out infinite";
+    movingChess2.style.animation =
+      "apear 0.8s 1.3s ease forwards, movingChess 5s ease-in-out 2.1s infinite;";
   } else {
     mainText4.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
     mainText5.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
     mainText6.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
     mainText7.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
-    movingCrown.style.animation = "disApear 0.8s ease ";
+    movingChess2.style.animation = "disApear 0.8s 2.1s ease forwards";
 
-    mainText4.style.display = "none";
-    mainText5.style.display = "none";
-    mainText6.style.display = "none";
-    mainText7.style.display = "none";
-    movingCrown.style.display = "none";
+    mainText4.style.animation =
+      "slideMainTextDisplayNone 0.1s 1.5 ease-in-out forward";
+    mainText5.style.animation =
+      "slideMainTextDisplayNone 0.1s 1.5 ease-in-out forward";
+    mainText6.style.animation =
+      "slideMainTextDisplayNone 0.1s 1.5 ease-in-out forward";
+    mainText7.style.animation =
+      "slideMainTextDisplayNone 0.1s 1.5 ease-in-out forward";
+    movingChess2.style.animation =
+      "slideMainTextDisplayNone 0.1s 1.5 ease-in-out forward";
   }
 });
 
@@ -130,26 +135,26 @@ addEventListener("scroll", function () {
     mainText9.style.display = "inline";
     mainText10.style.display = "inline";
     mainText11.style.display = "inline";
-    wineHands.style.display = "block";
+    movingChess3.style.display = "block";
 
     mainText8.style.animation = "slideMainText 1.5s ease-in-out forwards";
     mainText9.style.animation = "slideMainText 1.5s 0.2s ease-in-out forwards";
     mainText10.style.animation = "slideMainText 1.5s 0.4s ease-in-out forwards";
     mainText11.style.animation = "slideMainText 1.5s 0.4s ease-in-out forwards";
-    wineHands.style.animation =
-      "apear 0.8s 1.3s ease forwards, movingWine 7s 2s ease-in-out infinite";
+    movingChess3.style.animation =
+      "apear 0.8s 1.3s ease forwards, movingChess 5s ease-in-out 2.1s infinite;";
   } else {
     mainText8.style.display = "none";
     mainText9.style.display = "none";
     mainText10.style.display = "none";
     mainText11.style.display = "none";
-    wineHands.style.display = "none";
+    movingChess3.style.display = "none";
 
     mainText8.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
     mainText9.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
     mainText10.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
     mainText11.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
-    wineHands.style.animation = "disApear 0.8s ease ";
+    movingChess3.style.animation = "disApear 0.8s 2.1s ease forwards";
   }
 });
 
@@ -169,26 +174,26 @@ addEventListener("scroll", function () {
     mainText13.style.display = "inline";
     mainText14.style.display = "inline";
     mainText15.style.display = "inline";
-    faceGlasses.style.display = "block";
+    movingChess4.style.display = "block";
 
     mainText12.style.animation = "slideMainText 1.5s ease-in-out forwards";
     mainText13.style.animation = "slideMainText 1.5s 0.2s ease-in-out forwards";
     mainText14.style.animation = "slideMainText 1.5s 0.4s ease-in-out forwards";
     mainText15.style.animation = "slideMainText 1.5s 0.4s ease-in-out forwards";
-    faceGlasses.style.animation =
-      "apear 0.8s 1.3s ease forwards, movingGlasses 7s 2s ease-in-out infinite";
+    movingChess4.style.animation =
+      "apear 0.8s 1.3s ease forwards, movingChess 5s ease-in-out 2.1s infinite;";
   } else {
     mainText12.style.display = "none";
     mainText13.style.display = "none";
     mainText14.style.display = "none";
     mainText15.style.display = "none";
-    faceGlasses.style.display = "none";
+    movingChess4.style.display = "none";
 
     mainText12.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
     mainText13.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
     mainText14.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
     mainText15.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
-    faceGlasses.style.animation = "disApear 0.8s ease ";
+    movingChess4.style.animation = "disApear 0.8s 2.1s ease forwards";
   }
 });
 
@@ -205,26 +210,26 @@ addEventListener("scroll", function () {
     mainText17.style.display = "inline";
     mainText18.style.display = "inline";
     mainText19.style.display = "inline";
-    elephantDoor.style.display = "block";
+    movingChess5.style.display = "block";
 
     mainText16.style.animation = "slideMainText 1.5s ease-in-out forwards";
     mainText17.style.animation = "slideMainText 1.5s 0.2s ease-in-out forwards";
     mainText18.style.animation = "slideMainText 1.5s 0.4s ease-in-out forwards";
     mainText19.style.animation = "slideMainText 1.5s 0.4s ease-in-out forwards";
-    elephantDoor.style.animation =
-      "apear 0.8s 1.3s ease forwards, movingElephantDoor 7s 2s ease-in-out infinite";
+    movingChess5.style.animation =
+      "apear 0.8s 1.3s ease forwards, movingChess 5s ease-in-out 2.1s infinite;";
   } else {
     mainText16.style.display = "none";
     mainText17.style.display = "none";
     mainText18.style.display = "none";
     mainText19.style.display = "none";
-    elephantDoor.style.display = "none";
+    movingChess5.style.display = "none";
 
     mainText16.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
     mainText17.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
     mainText18.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
     mainText19.style.animation = "slideMainTextDisapear 1.5s ease-in-out ";
-    elephantDoor.style.animation = "disApear 0.8s ease ";
+    movingChess5.style.animation = "disApear 0.8s 2.1s ease forwards";
   }
 });
 

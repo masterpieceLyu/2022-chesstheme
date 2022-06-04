@@ -210,38 +210,38 @@
     transition: 0.5s ease-in-out;
   }
 
-  .movingCrown {
+  .movingChess2 {
     top: 120vh;
     left: 100px;
     margin-top: 50px;
     transition: 0.5s ease-in-out;
   }
 
-  .main-main2 .movingCrown img {
+  .main-main2 .movingChess2 img {
     width: 430px;
   }
 
-  .wineHands {
+  .movingChess3 {
     top: 217vh;
     right: 100px;
     margin-top: 50px;
   }
 
-  .main-main3 .wineHands img {
+  .main-main3 .movingChess3 img {
     height: 520px;
   }
 
-  .faceGlasses {
+  .movingChess4 {
     top: 317vh;
     left: 90px;
     margin-top: 50px;
   }
 
-  .main-main4 .faceGlasses img {
+  .main-main4 .movingChess4 img {
     height: 500px;
   }
 
-  .elephantDoor {
+  .movingChess5 {
     top: 423vh;
     right: 0px;
     margin-top: 50px;
@@ -249,7 +249,7 @@
     transition: 0.5s ease-in-out;
   }
 
-  .main-main5 .elephantDoor img {
+  .main-main5 .movingChess5 img {
     height: 360px;
   }
 
@@ -306,7 +306,7 @@
     }
   }
 
-  @keyframes movingCrown {
+  @keyframes movingChess2 {
     0% {
       opacity: 1;
       top: 120vh;
@@ -351,7 +351,7 @@
     }
   }
 
-  @keyframes movingElephantDoor {
+  @keyframes movingmovingChess5 {
     0% {
       opacity: 1;
       /* top: 415vh; */
@@ -633,7 +633,7 @@
     transition: 0.5s ease-in-out;
   }
 
-  .movingCrown {
+  .movingChess2 {
     position: static;
     display: flex;
     justify-content: center;
@@ -643,11 +643,11 @@
     transition: 0.5s ease-in-out;
   }
 
-  .main-main2 .movingCrown img {
+  .main-main2 .movingChess2 img {
     width: 370px;
   }
 
-  .wineHands {
+  .movingChess3 {
     position: static;
     display: flex;
     justify-content: center;
@@ -658,12 +658,12 @@
     transition: 0.5s ease-in-out;
   }
 
-  .main-main3 .wineHands img {
+  .main-main3 .movingChess3 img {
     width: 320px;
     height: auto;
   }
 
-  .faceGlasses {
+  .movingChess4 {
     position: static;
     display: flex;
     justify-content: center;
@@ -674,12 +674,12 @@
     transition: 0.5s ease-in-out;
   }
 
-  .main-main4 .faceGlasses img {
+  .main-main4 .movingChess4 img {
     width: 370px;
     height: auto;
   }
 
-  .elephantDoor {
+  .movingChess5 {
     position: static;
     display: flex;
     justify-content: center;
@@ -690,7 +690,7 @@
     transition: 0.5s ease-in-out;
   }
 
-  .main-main5 .elephantDoor img {
+  .main-main5 .movingChess5 img {
     width: 400px;
     height: auto;
   }
@@ -753,7 +753,7 @@
     }
   }
 
-  @keyframes movingCrown {
+  @keyframes movingChess2 {
     0% {
       transform: translate(0, 0px);
       opacity: 1;
@@ -798,7 +798,7 @@
     }
   }
 
-  @keyframes movingElephantDoor {
+  @keyframes movingmovingChess5 {
     0% {
       transform: translate(0, 0px);
       opacity: 1;
@@ -1087,7 +1087,7 @@
     transition: 0.5s ease-in-out;
   }
 
-  .movingCrown {
+  .movingChess2 {
     position: static;
     display: flex;
     justify-content: center;
@@ -1097,27 +1097,11 @@
     transition: 0.5s ease-in-out;
   }
 
-  .main-main2 .movingCrown img {
+  .main-main2 .movingChess2 img {
     width: 280px;
   }
 
-  .wineHands {
-    position: static;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 280px;
-    margin-top: 280px;
-    padding-right: 10px;
-    transition: 0.5s ease-in-out;
-  }
-
-  .main-main3 .wineHands img {
-    width: 280px;
-    height: auto;
-  }
-
-  .faceGlasses {
+  .movingChess3 {
     position: static;
     display: flex;
     justify-content: center;
@@ -1128,12 +1112,28 @@
     transition: 0.5s ease-in-out;
   }
 
-  .main-main4 .faceGlasses img {
+  .main-main3 .movingChess3 img {
     width: 280px;
     height: auto;
   }
 
-  .elephantDoor {
+  .movingChess4 {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    margin-top: 280px;
+    padding-right: 10px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .main-main4 .movingChess4 img {
+    width: 280px;
+    height: auto;
+  }
+
+  .movingChess5 {
     position: static;
     display: flex;
     justify-content: center;
@@ -1144,7 +1144,7 @@
     transition: 0.5s ease-in-out;
   }
 
-  .main-main5 .elephantDoor img {
+  .main-main5 .movingChess5 img {
     width: 280px;
     height: auto;
   }
@@ -1216,7 +1216,7 @@
     }
   }
 
-  @keyframes movingCrown {
+  @keyframes movingChess2 {
     0% {
       transform: translate(0, 0px);
       opacity: 1;
@@ -1261,7 +1261,7 @@
     }
   }
 
-  @keyframes movingElephantDoor {
+  @keyframes movingmovingChess5 {
     0% {
       transform: translate(0, 0px);
       opacity: 1;
