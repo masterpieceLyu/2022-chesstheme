@@ -141,8 +141,9 @@ nav_menu.addEventListener("click", handleClick);
 
 ___
 ### 4. Cursor Pointer : 마우스 이벤트를 이용한 포인터
+/*
 <img width="840" alt="mouseCursor" src="https://user-images.githubusercontent.com/89332618/169262534-79f6f01b-8fa2-4c85-89c7-b4bfe8365e88.gif">
-
+*/
 ```js
 const Logo = document.querySelector(".header__nav-logo");
 addEventListener("mousemove", cursor);
